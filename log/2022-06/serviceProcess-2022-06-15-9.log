@@ -1,0 +1,21 @@
+2022-06-15 10:23:16,115 [restartedMain] DEBUG    - HHH000031: Closing
+2022-06-15 10:23:16,120 [restartedMain] DEBUG    - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@76ea882c] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@675f16d5]
+2022-06-15 10:23:16,122 [restartedMain] DEBUG    - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-06-15 10:23:16,124 [restartedMain] DEBUG    - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-06-15 10:23:16,127 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 10:23:16,127 [restartedMain] DEBUG    - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:23:16,129 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3ea65ce7: (connection evicted)
+2022-06-15 10:23:16,135 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@25167c97: (connection evicted)
+2022-06-15 10:23:16,142 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4361e8db: (connection evicted)
+2022-06-15 10:23:16,148 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3b25163d: (connection evicted)
+2022-06-15 10:23:16,154 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@20213f30: (connection evicted)
+2022-06-15 10:23:16,160 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@34e5a419: (connection evicted)
+2022-06-15 10:23:16,164 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@526420cd: (connection evicted)
+2022-06-15 10:23:16,168 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@70be81f8: (connection evicted)
+2022-06-15 10:23:16,172 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@22643447: (connection evicted)
+2022-06-15 10:23:16,178 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@58a40b9e: (connection evicted)
+2022-06-15 10:23:16,183 [restartedMain] DEBUG    - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-06-15 10:23:16,184 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 10:58:56,222 [main] INFO    - Starting BatchEmailApplicationTests using Java 17.0.2 on X390 with PID 16640 (started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 10:58:56,225 [main] DEBUG    - Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-06-15 10:58:56,226 [main] INFO    - No active profile set, falling back to 1 default profile: "default"

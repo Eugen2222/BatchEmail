@@ -1,0 +1,16 @@
+2022-06-15 10:22:52,946 [restartedMain] DEBUG    - dataSourceProperties................................{password=<masked>}
+2022-06-15 10:22:52,950 [restartedMain] DEBUG    - driverClassName................................"oracle.jdbc.OracleDriver"
+2022-06-15 10:22:52,951 [restartedMain] DEBUG    - exceptionOverrideClassName................................none
+2022-06-15 10:22:52,951 [restartedMain] DEBUG    - healthCheckProperties................................{}
+2022-06-15 10:22:52,951 [restartedMain] DEBUG    - healthCheckRegistry................................none
+2022-06-15 10:22:52,951 [restartedMain] DEBUG    - idleTimeout................................600000
+2022-06-15 10:22:52,951 [restartedMain] DEBUG    - initializationFailTimeout................................1
+2022-06-15 10:22:52,952 [restartedMain] DEBUG    - isolateInternalQueries................................false
+2022-06-15 10:22:52,952 [restartedMain] DEBUG    - jdbcUrl................................jdbc:oracle:thin:@10.70.12.26:1521/orclpdb.dw.com.tw
+2022-06-15 10:22:52,952 [restartedMain] DEBUG    - keepaliveTime................................0
+2022-06-15 10:22:52,952 [restartedMain] DEBUG    - leakDetectionThreshold................................0
+2022-06-15 10:22:52,952 [restartedMain] DEBUG    - maxLifetime................................1800000
+2022-06-15 10:22:52,953 [restartedMain] DEBUG    - maximumPoolSize................................10
+2022-06-15 10:22:52,953 [restartedMain] DEBUG    - metricRegistry................................none
+2022-06-15 10:22:52,953 [restartedMain] DEBUG    - metricsTrackerFactory................................none
+2022-06-15 10:22:52,953 [restartedMain] DEBUG    - minimumIdle................................10

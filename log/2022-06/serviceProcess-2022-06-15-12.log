@@ -1,0 +1,31 @@
+2022-06-15 10:58:57,889 [main] DEBUG    - password................................<masked>
+2022-06-15 10:58:57,893 [main] DEBUG    - poolName................................"HikariPool-1"
+2022-06-15 10:58:57,894 [main] DEBUG    - readOnly................................false
+2022-06-15 10:58:57,895 [main] DEBUG    - registerMbeans................................false
+2022-06-15 10:58:57,896 [main] DEBUG    - scheduledExecutor................................none
+2022-06-15 10:58:57,897 [main] DEBUG    - schema................................none
+2022-06-15 10:58:57,898 [main] DEBUG    - threadFactory................................internal
+2022-06-15 10:58:57,898 [main] DEBUG    - transactionIsolation................................default
+2022-06-15 10:58:57,899 [main] DEBUG    - username................................"ATFEOPCORE"
+2022-06-15 10:58:57,899 [main] DEBUG    - validationTimeout................................5000
+2022-06-15 10:58:57,899 [main] INFO    - HikariPool-1 - Starting...
+2022-06-15 10:58:58,539 [main] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@626c19cf
+2022-06-15 10:58:58,541 [main] INFO    - HikariPool-1 - Start completed.
+2022-06-15 10:58:58,650 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-06-15 10:58:58,657 [main] DEBUG    - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@6d21714c
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/workfile/CUB_etl/JavaEE/BatchEmail/target/test-classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		batchEmail.dbTable.Batch_Job_Status]
+	Mapping files names []
+	Properties []
+2022-06-15 10:58:58,685 [main] DEBUG    - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].

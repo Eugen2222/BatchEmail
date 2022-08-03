@@ -1,0 +1,11 @@
+2022-06-15 11:24:18,241 [main] INFO    - HikariPool-1 - Starting...
+2022-06-15 11:24:18,734 [main] INFO    - HikariPool-1 - Start completed.
+2022-06-15 11:24:18,819 [main] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 11:24:18,901 [main] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 11:24:19,165 [main] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 11:24:19,392 [main] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 11:24:20,391 [main] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 11:24:21,362 [main] INFO    - Started BatchEmailApplicationTests in 4.819 seconds (JVM running for 6.278)
+2022-06-15 11:24:21,369 [main] INFO    - Try to send test email.
+2022-06-15 11:24:30,723 [main] INFO    - Test email has been sent to owenhsieh@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 11:24:30,724 [main] INFO    - Try to test check email flag.

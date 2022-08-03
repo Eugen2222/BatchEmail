@@ -1,0 +1,29 @@
+2022-06-15 10:59:02,397 [main] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:59:02,409 [main] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:59:02,410 [main] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set UPDATE_TM = CURRENT_TIMESTAMP where BATCH_NAME = ?1
+2022-06-15 10:59:02,411 [main] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:59:02,412 [main] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'UPDATE_TM'
+    |     \-[IDENT] Node: 'CURRENT_TIMESTAMP'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '1'
+
+2022-06-15 10:59:02,413 [main] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:59:02,413 [main] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:59:02,414 [main] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:59:02,414 [main] DEBUG    - getDataType() : UPDATE_TM -> org.hibernate.type.TimestampType@4db0ba1c
+2022-06-15 10:59:02,414 [main] DEBUG    - Resolved : {synthetic-alias}.UPDATE_TM -> update_tm
+2022-06-15 10:59:02,418 [main] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}

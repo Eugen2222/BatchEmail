@@ -1,0 +1,664 @@
+2022-06-15 10:59:02,454 [main] DEBUG    - Resolved : {synthetic-alias}.SEND_MAIL_OBJECT -> send_mail_object
+2022-06-15 10:59:02,461 [main] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:59:02,461 [main] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@cf01c2e
+2022-06-15 10:59:02,462 [main] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:59:02,463 [main] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:59:02,463 [main] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:59:02,464 [main] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'send_mail_object' {propertyName=SEND_MAIL_OBJECT,dereferenceType=PRIMITIVE,getPropertyPath=SEND_MAIL_OBJECT,path={synthetic-alias}.SEND_MAIL_OBJECT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SEND_MAIL_OBJECT' {originalText=SEND_MAIL_OBJECT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@cf01c2e}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@cf01c2e}
+
+2022-06-15 10:59:02,465 [main] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:59:02,465 [main] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:59:02,691 [main] INFO    - Started BatchEmailApplicationTests in 6.909 seconds (JVM running for 8.423)
+2022-06-15 10:59:02,694 [main] INFO    - Try to send test email.
+2022-06-15 10:59:24,580 [main] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:59:24,586 [main] DEBUG    - begin
+2022-06-15 10:59:24,705 [main] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 10:59:24,877 [main] DEBUG    - committing
+2022-06-15 10:59:25,079 [main] DEBUG    - Converting QueryParameterBinding to QueryParameterListBinding for given QueryParameter : org.hibernate.engine.query.spi.NamedParameterDescriptor@5cfee87
+2022-06-15 10:59:25,132 [main] DEBUG    - select * from Batch_Job_Status where SEND_MAIL_FLAG in (?, ?)
+2022-06-15 10:59:25,175 [main] DEBUG    - Result set row: 0
+2022-06-15 10:59:25,181 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RPTMART_RULE_DATA]
+2022-06-15 10:59:25,201 [main] DEBUG    - Result set row: 1
+2022-06-15 10:59:25,202 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#AF_CASE_STATUS]
+2022-06-15 10:59:25,204 [main] DEBUG    - Result set row: 2
+2022-06-15 10:59:25,205 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#AF_BRANCH_UTF8]
+2022-06-15 10:59:25,207 [main] DEBUG    - Result set row: 3
+2022-06-15 10:59:25,208 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RISK_GROUP_DATA]
+2022-06-15 10:59:25,220 [main] DEBUG    - Result set row: 4
+2022-06-15 10:59:25,220 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#UPD_RISK_NO]
+2022-06-15 10:59:25,221 [main] DEBUG    - Result set row: 5
+2022-06-15 10:59:25,227 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#VI_RISK]
+2022-06-15 10:59:25,229 [main] DEBUG    - Result set row: 6
+2022-06-15 10:59:25,230 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#VI_DEGREE]
+2022-06-15 10:59:25,231 [main] DEBUG    - Result set row: 7
+2022-06-15 10:59:25,232 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#DEL_AF_APPLY_BK]
+2022-06-15 10:59:25,237 [main] DEBUG    - Result set row: 8
+2022-06-15 10:59:25,238 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_HIST]
+2022-06-15 10:59:25,240 [main] DEBUG    - Result set row: 9
+2022-06-15 10:59:25,242 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_RELA]
+2022-06-15 10:59:25,255 [main] DEBUG    - Result set row: 10
+2022-06-15 10:59:25,256 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY]
+2022-06-15 10:59:25,257 [main] DEBUG    - Result set row: 11
+2022-06-15 10:59:25,258 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#AF_RULE_LIST]
+2022-06-15 10:59:25,259 [main] DEBUG    - Result set row: 12
+2022-06-15 10:59:25,259 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#FTP_BRANCH]
+2022-06-15 10:59:25,260 [main] DEBUG    - Result set row: 13
+2022-06-15 10:59:25,261 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RPTMART_01_RPT]
+2022-06-15 10:59:25,262 [main] DEBUG    - Result set row: 14
+2022-06-15 10:59:25,262 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RPTMART_2_3_RPT]
+2022-06-15 10:59:25,263 [main] DEBUG    - Result set row: 15
+2022-06-15 10:59:25,263 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RPTMART_14_RPT]
+2022-06-15 10:59:25,266 [main] DEBUG    - Result set row: 16
+2022-06-15 10:59:25,266 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#RPTMART_APPLY_DATA]
+2022-06-15 10:59:25,267 [main] DEBUG    - Result set row: 17
+2022-06-15 10:59:25,268 [main] DEBUG    - Result row: EntityKey[batchEmail.dbTable.Batch_Job_Status#FTP_CUST_RELA]
+2022-06-15 10:59:25,276 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RPTMART_RULE_DATA]
+2022-06-15 10:59:25,277 [main] INFO    - Starting BatchEmailApplicationTests using Java 17.0.2 on X390 with PID 19916 (started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 10:59:25,278 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RPT
+2022-06-15 10:59:25,279 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,279 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,279 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,280 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-24 12:55:23.785519
+2022-06-15 10:59:25,280 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,280 [main] DEBUG    - Processing attribute `MAX_DATE` : value = 202012
+2022-06-15 10:59:25,281 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,281 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RPTMART_RULE_DATA,Job Start Time: 2022-03-24 12:55:18.127846,Job End Time: 2022-03-24 12:55:23.785519,Job Status: Success
+2022-06-15 10:59:25,281 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,281 [main] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 10:59:25,281 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,284 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,285 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,285 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,285 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RPT Batch Job Success: RPTMART_RULE_DATA
+2022-06-15 10:59:25,285 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,287 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,287 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,287 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,288 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,288 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-24 12:55:18.127846
+2022-06-15 10:59:25,289 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,289 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = null
+2022-06-15 10:59:25,289 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,290 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-24 12:55:23.785519
+2022-06-15 10:59:25,290 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,294 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RPTMART_RULE_DATA]
+2022-06-15 10:59:25,294 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#AF_CASE_STATUS]
+2022-06-15 10:59:25,294 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = FTP
+2022-06-15 10:59:25,295 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,295 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,295 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,296 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-04-26 14:06:58.572585
+2022-06-15 10:59:25,296 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,296 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,297 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,297 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = null
+2022-06-15 10:59:25,297 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,297 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,298 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,298 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,298 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,298 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = null
+2022-06-15 10:59:25,299 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,299 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = 6
+2022-06-15 10:59:25,299 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,299 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = /appool/sasvi_af_case_status/af_case_status.csv
+2022-06-15 10:59:25,299 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,300 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-04-26 14:06:58.539
+2022-06-15 10:59:25,300 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,300 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 6
+2022-06-15 10:59:25,301 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,301 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-04-26 14:06:58.575448
+2022-06-15 10:59:25,301 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,302 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#AF_CASE_STATUS]
+2022-06-15 10:59:25,302 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#AF_BRANCH_UTF8]
+2022-06-15 10:59:25,302 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = FTP
+2022-06-15 10:59:25,303 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,303 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Failure
+2022-06-15 10:59:25,304 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,304 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-06-07 11:24:58.428
+2022-06-15 10:59:25,305 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,305 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,306 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,306 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: AF_BRANCH_UTF8
+Source Row Count: -1
+Process Row Count: -1
+Job Start Time: 2022-06-07 11:24:58.421
+Job End Time: 2022-06-07 11:24:58.428
+Job Status: Failure
+Error Message: Error: The table "AF_BRANCH_UTF8" does not exsit on the DB.
+2022-06-15 10:59:25,306 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,307 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,310 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,310 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = samuellin@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 10:59:25,311 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,312 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = AF_BRANCH_UTF8
+2022-06-15 10:59:25,313 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,313 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = -1
+2022-06-15 10:59:25,314 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,315 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = C:\workfile\CUB_etl\NAS_CUB\MG_BRHM_UTF8
+2022-06-15 10:59:25,327 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,328 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-04-27 10:43:29.479
+2022-06-15 10:59:25,329 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,330 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = -1
+2022-06-15 10:59:25,330 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,331 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-06-07 11:24:58.431344
+2022-06-15 10:59:25,334 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,335 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#AF_BRANCH_UTF8]
+2022-06-15 10:59:25,338 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RISK_GROUP_DATA]
+2022-06-15 10:59:25,340 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RISK
+2022-06-15 10:59:25,341 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,342 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,342 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,343 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-15 17:44:13.939916
+2022-06-15 10:59:25,345 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,354 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,354 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,355 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RISK_GROUP_DATA
+Process Row Count: 2362182
+Job Start Time: 2022-05-15 17:44:11.196472
+Job End Time: 2022-05-15 17:44:13.939916
+Job Status: Success
+2022-06-15 10:59:25,355 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,355 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,356 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,357 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,357 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,357 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RISK Batch Job Success: RISK_GROUP_DATA
+2022-06-15 10:59:25,358 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,358 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,358 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,359 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,359 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,359 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-15 17:44:11.196472
+2022-06-15 10:59:25,359 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,359 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 2362182
+2022-06-15 10:59:25,360 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,360 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-15 17:44:13.939916
+2022-06-15 10:59:25,360 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,361 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RISK_GROUP_DATA]
+2022-06-15 10:59:25,361 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#UPD_RISK_NO]
+2022-06-15 10:59:25,362 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RISK
+2022-06-15 10:59:25,362 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,363 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,363 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,363 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-14 17:43:30.447473
+2022-06-15 10:59:25,364 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,364 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,365 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,365 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: UPD_RISK_NO
+Process Row Count: 0
+Job Start Time: 2022-05-14 17:43:30.446047
+Job End Time: 2022-05-14 17:43:30.447473
+Job Status: Success
+2022-06-15 10:59:25,365 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,366 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,367 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,367 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,368 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,369 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RISK Batch Job Success: UPD_RISK_NO
+2022-06-15 10:59:25,369 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,370 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,370 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,370 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,371 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,371 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-14 17:43:30.446047
+2022-06-15 10:59:25,371 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,372 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 0
+2022-06-15 10:59:25,372 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,372 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-14 17:43:30.447473
+2022-06-15 10:59:25,373 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,373 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#UPD_RISK_NO]
+2022-06-15 10:59:25,380 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#VI_RISK]
+2022-06-15 10:59:25,381 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RISK
+2022-06-15 10:59:25,382 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,383 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,383 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,383 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-15 17:52:36.048616
+2022-06-15 10:59:25,384 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,384 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,385 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,385 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: VI_RISK
+Process Row Count: 180884
+Job Start Time: 2022-05-15 17:52:15.507880
+Job End Time: 2022-05-15 17:52:36.048616
+Job Status: Success
+2022-06-15 10:59:25,386 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,388 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,388 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,389 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,389 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,390 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RISK Batch Job Success: VI_RISK
+2022-06-15 10:59:25,392 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,393 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,396 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,397 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,398 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,399 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-15 17:52:15.50788
+2022-06-15 10:59:25,400 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,400 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 180884
+2022-06-15 10:59:25,401 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,401 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-15 17:52:36.048616
+2022-06-15 10:59:25,402 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,402 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#VI_RISK]
+2022-06-15 10:59:25,403 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#VI_DEGREE]
+2022-06-15 10:59:25,405 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RISK
+2022-06-15 10:59:25,407 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,408 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,409 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,410 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-15 17:48:49.329488
+2022-06-15 10:59:25,410 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,410 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,411 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,411 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: VI_DEGREE
+Process Row Count: 2757850
+Job Start Time: 2022-05-15 17:47:32.650166
+Job End Time: 2022-05-15 17:48:49.329488
+Job Status: Success
+2022-06-15 10:59:25,412 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,412 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,412 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,413 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,413 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,414 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RISK Batch Job Success: VI_DEGREE
+2022-06-15 10:59:25,414 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,415 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,416 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,416 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,417 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,417 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-15 17:47:32.650166
+2022-06-15 10:59:25,418 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,418 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 2757850
+2022-06-15 10:59:25,418 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,419 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-15 17:48:49.329488
+2022-06-15 10:59:25,419 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,420 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#VI_DEGREE]
+2022-06-15 10:59:25,422 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#DEL_AF_APPLY_BK]
+2022-06-15 10:59:25,431 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = VIDB
+2022-06-15 10:59:25,432 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,442 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,442 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,442 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-14 17:33:34.439464
+2022-06-15 10:59:25,442 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,443 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,443 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,443 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: DEL_AF_APPLY_BK
+Process Row Count: 0
+Job Start Time: 2022-05-14 17:33:34.351643
+Job End Time: 2022-05-14 17:33:34.439464
+Job Status: Success
+2022-06-15 10:59:25,443 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,443 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,443 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,444 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,444 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,444 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] VIDB Batch Job Success: DEL_AF_APPLY_BK
+2022-06-15 10:59:25,445 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,445 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,445 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,445 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,445 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,446 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-14 17:33:34.351643
+2022-06-15 10:59:25,446 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,446 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 0
+2022-06-15 10:59:25,446 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,447 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-14 17:33:34.439464
+2022-06-15 10:59:25,447 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,447 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#DEL_AF_APPLY_BK]
+2022-06-15 10:59:25,448 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_HIST]
+2022-06-15 10:59:25,475 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = VIDB
+2022-06-15 10:59:25,478 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,479 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,479 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,480 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-14 17:33:34.446244
+2022-06-15 10:59:25,480 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,481 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,481 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,481 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: DEL_VI_APPLY_HIST
+Process Row Count: 0
+Job Start Time: 2022-05-14 17:33:34.440222
+Job End Time: 2022-05-14 17:33:34.446244
+Job Status: Success
+2022-06-15 10:59:25,482 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,482 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,482 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,483 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,483 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,484 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] VIDB Batch Job Success: DEL_VI_APPLY_HIST
+2022-06-15 10:59:25,484 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,485 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,486 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,487 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,496 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,496 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-14 17:33:34.440222
+2022-06-15 10:59:25,497 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,497 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 0
+2022-06-15 10:59:25,498 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,499 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-14 17:33:34.446244
+2022-06-15 10:59:25,499 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,500 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_HIST]
+2022-06-15 10:59:25,501 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_RELA]
+2022-06-15 10:59:25,501 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = VIDB
+2022-06-15 10:59:25,502 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,502 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,503 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,503 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-14 17:33:34.50512
+2022-06-15 10:59:25,505 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,507 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,508 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,509 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: DEL_VI_APPLY_RELA
+Process Row Count: 0
+Job Start Time: 2022-05-14 17:33:34.446978
+Job End Time: 2022-05-14 17:33:34.505120
+Job Status: Success
+2022-06-15 10:59:25,509 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,510 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,511 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,511 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,511 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,512 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] VIDB Batch Job Success: DEL_VI_APPLY_RELA
+2022-06-15 10:59:25,517 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,517 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,519 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,520 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,521 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,522 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-14 17:33:34.446978
+2022-06-15 10:59:25,523 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,524 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 0
+2022-06-15 10:59:25,524 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,525 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-14 17:33:34.50512
+2022-06-15 10:59:25,525 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,525 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY_RELA]
+2022-06-15 10:59:25,527 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY]
+2022-06-15 10:59:25,528 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = VIDB
+2022-06-15 10:59:25,528 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,528 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,528 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,529 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-05-14 17:33:34.509821
+2022-06-15 10:59:25,530 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,530 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,530 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,530 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: DEL_VI_APPLY
+Process Row Count: 0
+Job Start Time: 2022-05-14 17:33:34.508045
+Job End Time: 2022-05-14 17:33:34.509821
+Job Status: Success
+2022-06-15 10:59:25,530 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,531 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,531 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,532 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = owenhsieh@dawningtech.com.tw
+2022-06-15 10:59:25,532 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,532 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] VIDB Batch Job Success: DEL_VI_APPLY
+2022-06-15 10:59:25,533 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,533 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,533 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,533 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,533 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,534 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-05-14 17:33:34.508045
+2022-06-15 10:59:25,534 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,534 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 0
+2022-06-15 10:59:25,534 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,535 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-05-14 17:33:34.509821
+2022-06-15 10:59:25,535 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,535 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#DEL_VI_APPLY]
+2022-06-15 10:59:25,535 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#AF_RULE_LIST]
+2022-06-15 10:59:25,536 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = FTP
+2022-06-15 10:59:25,536 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,536 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Failure
+2022-06-15 10:59:25,536 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,536 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-06-07 11:24:58.495
+2022-06-15 10:59:25,543 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,544 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,544 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,544 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: AF_RULE_LIST
+Source Row Count: 6
+Process Row Count: -1
+Job Start Time: 2022-06-07 11:24:58.461
+Job End Time: 2022-06-07 11:24:58.495
+Job Status: Failure
+Error Message: java.sql.BatchUpdateException: ORA-00913: too many values
+
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeBatch(OraclePreparedStatement.java:9723)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeLargeBatch(T4CPreparedStatement.java:1447)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatch(OraclePreparedStatement.java:9499)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:237)
+	at oracle.ucp.jdbc.proxy.oracle$1ucp$1jdbc$1proxy$1oracle$1StatementProxy$2oracle$1jdbc$1internal$1OraclePreparedStatement$$$Proxy.executeBatch(Unknown Source)
+	at NASETL.main(NASETL.java:597)
+
+2022-06-15 10:59:25,544 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,545 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,545 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,545 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = samuellin@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 10:59:25,545 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,545 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = AF_RULE_LIST
+2022-06-15 10:59:25,545 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,546 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = 6
+2022-06-15 10:59:25,546 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,546 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = /NAS_CUB/AF_RULE_LIST.txt
+2022-06-15 10:59:25,546 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,547 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-06-07 11:24:58.461
+2022-06-15 10:59:25,547 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,547 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = -1
+2022-06-15 10:59:25,552 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,552 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-06-07 11:24:58.496725
+2022-06-15 10:59:25,553 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,556 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#AF_RULE_LIST]
+2022-06-15 10:59:25,557 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#FTP_BRANCH]
+2022-06-15 10:59:25,558 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = FTP
+2022-06-15 10:59:25,558 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,558 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Failure
+2022-06-15 10:59:25,559 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,559 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-06-07 11:24:58.41
+2022-06-15 10:59:25,560 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,560 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,560 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,560 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: FTP_BRANCH
+Source Row Count: -1
+Process Row Count: -1
+Job Start Time: 2022-06-07 11:24:58.38
+Job End Time: 2022-06-07 11:24:58.41
+Job Status: Failure
+Error Message: java.io.FileNotFoundException
+	at NASETL.main(NASETL.java:404)
+
+2022-06-15 10:59:25,561 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,561 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Failure
+2022-06-15 10:59:25,561 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,562 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = samuellin@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 10:59:25,562 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,562 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = FTP_BRANCH
+2022-06-15 10:59:25,563 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,563 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = -1
+2022-06-15 10:59:25,563 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,563 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = C:\workfile\CUB_etl\NAS_CUB\/MG_BRHM20220309.txt
+2022-06-15 10:59:25,563 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,564 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-06-07 11:24:58.38
+2022-06-15 10:59:25,564 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,564 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = -1
+2022-06-15 10:59:25,564 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,564 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-06-07 11:24:58.412071
+2022-06-15 10:59:25,565 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,565 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#FTP_BRANCH]
+2022-06-15 10:59:25,565 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RPTMART_01_RPT]
+2022-06-15 10:59:25,565 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RPT
+2022-06-15 10:59:25,565 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,566 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,566 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,566 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-24 12:55:29.730619
+2022-06-15 10:59:25,567 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,567 [main] DEBUG    - Processing attribute `MAX_DATE` : value = 202012
+2022-06-15 10:59:25,567 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,568 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RPTMART_01_RPT,Job Start Time: 2022-03-24 12:55:23.794051,Job End Time: 2022-03-24 12:55:29.730619,Job Status: Success
+2022-06-15 10:59:25,568 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,568 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,568 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,568 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,569 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,569 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RPT Batch Job Success: RPTMART_01_RPT
+2022-06-15 10:59:25,569 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,569 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,570 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,570 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,570 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,571 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-24 12:55:23.794051
+2022-06-15 10:59:25,571 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,572 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = null
+2022-06-15 10:59:25,572 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,572 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-24 12:55:29.730619
+2022-06-15 10:59:25,573 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,574 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RPTMART_01_RPT]
+2022-06-15 10:59:25,574 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RPTMART_2_3_RPT]
+2022-06-15 10:59:25,574 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RPT
+2022-06-15 10:59:25,575 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,575 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,576 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,576 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-24 12:55:40.666528
+2022-06-15 10:59:25,576 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,577 [main] DEBUG    - Processing attribute `MAX_DATE` : value = 202012
+2022-06-15 10:59:25,577 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,577 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RPTMART_2_3_RPT,Job Start Time: 2022-03-24 12:55:29.731112,Job End Time: 2022-03-24 12:55:40.666528,Job Status: Success
+2022-06-15 10:59:25,578 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,578 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,578 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,578 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,578 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,579 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RPT Batch Job Success: RPTMART_2_3_RPT
+2022-06-15 10:59:25,579 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,579 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,579 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,579 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,592 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,592 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-24 12:55:29.731112
+2022-06-15 10:59:25,592 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,592 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = null
+2022-06-15 10:59:25,593 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,593 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-24 12:55:40.666528
+2022-06-15 10:59:25,593 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,593 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RPTMART_2_3_RPT]
+2022-06-15 10:59:25,594 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RPTMART_14_RPT]
+2022-06-15 10:59:25,594 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RPT
+2022-06-15 10:59:25,594 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,594 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,594 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,595 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-24 12:55:58.597639
+2022-06-15 10:59:25,595 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,595 [main] DEBUG    - Processing attribute `MAX_DATE` : value = 202012
+2022-06-15 10:59:25,595 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,595 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RPTMART_14_RPT,Job Start Time: 2022-03-24 12:55:40.668521,Job End Time: 2022-03-24 12:55:58.597639,Job Status: Success
+2022-06-15 10:59:25,596 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,596 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,596 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,596 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,597 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,604 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RPT Batch Job Success: RPTMART_14_RPT
+2022-06-15 10:59:25,605 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,605 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,606 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,606 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,606 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,607 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-24 12:55:40.668521
+2022-06-15 10:59:25,607 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,608 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = null
+2022-06-15 10:59:25,608 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,609 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-24 12:55:58.597639
+2022-06-15 10:59:25,609 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,609 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RPTMART_14_RPT]
+2022-06-15 10:59:25,609 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#RPTMART_APPLY_DATA]
+2022-06-15 10:59:25,610 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = RPT
+2022-06-15 10:59:25,610 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,610 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,610 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,610 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-24 12:55:18.122651
+2022-06-15 10:59:25,610 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,611 [main] DEBUG    - Processing attribute `MAX_DATE` : value = 202012
+2022-06-15 10:59:25,611 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,611 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = Job Name: RPTMART_APPLY_DATA,Job Start Time: 2022-03-24 12:55:14.424675,Job End Time: 2022-03-24 12:55:18.122651,Job Status: Success
+2022-06-15 10:59:25,611 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,612 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,613 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,613 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,613 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,613 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = [SFM AF] RPT Batch Job Success: RPTMART_APPLY_DATA
+2022-06-15 10:59:25,614 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,614 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = null
+2022-06-15 10:59:25,615 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,615 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = null
+2022-06-15 10:59:25,616 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,616 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-24 12:55:14.424675
+2022-06-15 10:59:25,619 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,620 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = null
+2022-06-15 10:59:25,622 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,623 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-24 12:55:18.122651
+2022-06-15 10:59:25,624 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,625 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#RPTMART_APPLY_DATA]
+2022-06-15 10:59:25,626 [main] DEBUG    - Resolving attributes for [batchEmail.dbTable.Batch_Job_Status#FTP_CUST_RELA]
+2022-06-15 10:59:25,627 [main] DEBUG    - Processing attribute `BATCH_CATEGORY` : value = FTP
+2022-06-15 10:59:25,633 [main] DEBUG    - Attribute (`BATCH_CATEGORY`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,634 [main] DEBUG    - Processing attribute `BATCH_STATUS` : value = Success
+2022-06-15 10:59:25,635 [main] DEBUG    - Attribute (`BATCH_STATUS`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,635 [main] DEBUG    - Processing attribute `END_TM` : value = 2022-03-23 15:56:54.640322
+2022-06-15 10:59:25,636 [main] DEBUG    - Attribute (`END_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,637 [main] DEBUG    - Processing attribute `MAX_DATE` : value = null
+2022-06-15 10:59:25,638 [main] DEBUG    - Attribute (`MAX_DATE`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,638 [main] DEBUG    - Processing attribute `SEND_MAIL_CONTENT` : value = null
+2022-06-15 10:59:25,639 [main] DEBUG    - Attribute (`SEND_MAIL_CONTENT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,640 [main] DEBUG    - Processing attribute `SEND_MAIL_FLAG` : value = Waiting
+2022-06-15 10:59:25,640 [main] DEBUG    - Attribute (`SEND_MAIL_FLAG`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,640 [main] DEBUG    - Processing attribute `SEND_MAIL_OBJECT` : value = null
+2022-06-15 10:59:25,641 [main] DEBUG    - Attribute (`SEND_MAIL_OBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,641 [main] DEBUG    - Processing attribute `SEND_MAIL_SUBJECT` : value = null
+2022-06-15 10:59:25,641 [main] DEBUG    - Attribute (`SEND_MAIL_SUBJECT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,642 [main] DEBUG    - Processing attribute `SOURCE_COUNT` : value = 744
+2022-06-15 10:59:25,643 [main] DEBUG    - Attribute (`SOURCE_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,643 [main] DEBUG    - Processing attribute `SOURCE_FILE_NAME` : value = C:\workfile\CUB_etl\NAS_CUB\RELATED2SFM_20220126.TXT
+2022-06-15 10:59:25,643 [main] DEBUG    - Attribute (`SOURCE_FILE_NAME`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,644 [main] DEBUG    - Processing attribute `START_TM` : value = 2022-03-23 15:56:52.154
+2022-06-15 10:59:25,644 [main] DEBUG    - Attribute (`START_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,645 [main] DEBUG    - Processing attribute `TARGET_COUNT` : value = 744
+2022-06-15 10:59:25,645 [main] DEBUG    - Attribute (`TARGET_COUNT`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,646 [main] DEBUG    - Processing attribute `UPDATE_TM` : value = 2022-03-23 15:56:55.050474
+2022-06-15 10:59:25,648 [main] DEBUG    - Attribute (`UPDATE_TM`)  - enhanced for lazy-loading? - false
+2022-06-15 10:59:25,649 [main] DEBUG    - Done materializing entity [batchEmail.dbTable.Batch_Job_Status#FTP_CUST_RELA]
+2022-06-15 10:59:28,050 [main] INFO    - HikariPool-1 - Starting...
+2022-06-15 10:59:28,663 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:59:28,667 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-06-15 10:59:28,759 [main] INFO    - HikariPool-1 - Start completed.
+2022-06-15 10:59:28,929 [main] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 10:59:29,089 [main] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 10:59:29,554 [main] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 10:59:29,813 [main] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 10:59:31,143 [main] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 10:59:32,192 [main] INFO    - Started BatchEmailApplicationTests in 8.023 seconds (JVM running for 10.301)
+2022-06-15 10:59:32,205 [main] INFO    - Try to send test email.
+2022-06-15 10:59:46,795 [SpringApplicationShutdownHook] DEBUG    - HHH000031: Closing
+2022-06-15 10:59:46,797 [SpringApplicationShutdownHook] DEBUG    - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1faceae5] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2c2aab92]
+2022-06-15 10:59:46,799 [SpringApplicationShutdownHook] DEBUG    - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-06-15 10:59:46,800 [SpringApplicationShutdownHook] DEBUG    - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-06-15 10:59:46,801 [SpringApplicationShutdownHook] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 10:59:46,801 [SpringApplicationShutdownHook] DEBUG    - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:59:46,803 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@626c19cf: (connection evicted)
+2022-06-15 10:59:46,810 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2a40ba66: (connection evicted)
+2022-06-15 10:59:46,816 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@75e05ec4: (connection evicted)
+2022-06-15 10:59:46,821 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@dabe9a2: (connection evicted)
+2022-06-15 10:59:46,826 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@16afc7e1: (connection evicted)
+2022-06-15 10:59:46,831 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6afc92ee: (connection evicted)
+2022-06-15 10:59:46,834 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7894bb72: (connection evicted)
+2022-06-15 10:59:46,840 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@524f019a: (connection evicted)
+2022-06-15 10:59:46,846 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@174d5767: (connection evicted)
+2022-06-15 10:59:46,850 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@599ec205: (connection evicted)
+2022-06-15 10:59:46,854 [SpringApplicationShutdownHook] DEBUG    - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-06-15 10:59:46,855 [SpringApplicationShutdownHook] INFO    - HikariPool-1 - Shutdown completed.

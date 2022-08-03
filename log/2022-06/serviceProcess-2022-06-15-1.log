@@ -1,0 +1,12 @@
+2022-06-15 10:22:52,778 [restartedMain] DEBUG    - Driver class oracle.jdbc.OracleDriver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c6ad219
+2022-06-15 10:22:52,911 [restartedMain] DEBUG    - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-06-15 10:22:52,923 [restartedMain] DEBUG    - HikariPool-1 - configuration:
+2022-06-15 10:22:52,924 [restartedMain] DEBUG    - allowPoolSuspension................................false
+2022-06-15 10:22:52,925 [restartedMain] DEBUG    - autoCommit................................true
+2022-06-15 10:22:52,937 [restartedMain] DEBUG    - catalog................................none
+2022-06-15 10:22:52,939 [restartedMain] DEBUG    - connectionInitSql................................none
+2022-06-15 10:22:52,940 [restartedMain] DEBUG    - connectionTestQuery................................none
+2022-06-15 10:22:52,941 [restartedMain] DEBUG    - connectionTimeout................................30000
+2022-06-15 10:22:52,943 [restartedMain] DEBUG    - dataSource................................none
+2022-06-15 10:22:52,945 [restartedMain] DEBUG    - dataSourceClassName................................none
+2022-06-15 10:22:52,945 [restartedMain] DEBUG    - dataSourceJNDI................................none

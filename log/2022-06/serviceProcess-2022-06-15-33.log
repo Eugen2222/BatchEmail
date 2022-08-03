@@ -1,0 +1,9 @@
+2022-06-15 11:13:07,438 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 11:13:08,137 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 11:13:08,631 [restartedMain] INFO    - Started BatchEmailApplication in 3.417 seconds (JVM running for 4.314)
+2022-06-15 11:13:08,633 [restartedMain] INFO    - Try to send test email.
+2022-06-15 11:13:29,742 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 11:13:29,813 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 11:21:22,124 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 21952 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 11:21:22,128 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 11:21:23,167 [restartedMain] INFO    - HikariPool-1 - Starting...

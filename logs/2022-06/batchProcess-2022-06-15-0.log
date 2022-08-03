@@ -1,0 +1,426 @@
+2022-06-15 15:54:46,092 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 23680 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 15:54:46,097 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:54:46,164 [restartedMain] INFO    - The Class-Path manifest attribute in C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user01/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.3.0.0/oraclepki.jar
+2022-06-15 15:54:46,165 [restartedMain] INFO    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-15 15:54:46,916 [restartedMain] INFO    - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-15 15:54:46,994 [restartedMain] INFO    - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2022-06-15 15:54:47,688 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 15:54:48,178 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 15:54:48,240 [restartedMain] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 15:54:48,327 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 15:54:48,582 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 15:54:48,757 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 15:54:49,625 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 15:54:49,636 [restartedMain] INFO    - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 15:54:50,259 [restartedMain] INFO    - LiveReload server is running on port 35729
+2022-06-15 15:54:50,280 [restartedMain] INFO    - Started BatchEmailApplication in 4.865 seconds (JVM running for 6.214)
+2022-06-15 15:54:50,283 [restartedMain] INFO    - Try to send test email.
+2022-06-15 15:54:55,028 [restartedMain] INFO    - Test email has been sent to owenhsieh@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 15:54:55,028 [restartedMain] INFO    - Try to test check email flag.
+2022-06-15 15:54:55,029 [restartedMain] INFO    - Try to set FTP_BRANCH SEND_MAIL_FLAG to Failure.
+2022-06-15 15:54:55,064 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 15:54:55,197 [restartedMain] DEBUG    - select * from Batch_Job_Status where SEND_MAIL_FLAG in (?, ?)
+2022-06-15 15:54:55,232 [restartedMain] INFO    - Try to send email for db table:"RPTMART_RULE_DATA".
+2022-06-15 15:54:55,234 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,235 [restartedMain] INFO    - Try to send email for db table:"AF_CASE_STATUS".
+2022-06-15 15:54:55,235 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,235 [restartedMain] INFO    - Try to send email for db table:"FTP_BRANCH".
+2022-06-15 15:54:55,309 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 15:54:55,323 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 15:54:55,334 [restartedMain] INFO    - Completed.
+2022-06-15 15:54:55,334 [restartedMain] INFO    - Try to send email for db table:"RPTMART_01_RPT".
+2022-06-15 15:54:55,335 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,335 [restartedMain] INFO    - Try to send email for db table:"RPTMART_2_3_RPT".
+2022-06-15 15:54:55,335 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,336 [restartedMain] INFO    - Try to send email for db table:"RPTMART_14_RPT".
+2022-06-15 15:54:55,336 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,336 [restartedMain] INFO    - Try to send email for db table:"RPTMART_APPLY_DATA".
+2022-06-15 15:54:55,336 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,336 [restartedMain] INFO    - Try to send email for db table:"FTP_CUST_RELA".
+2022-06-15 15:54:55,337 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 15:54:55,337 [restartedMain] INFO    - All tasks have been completed.
+2022-06-15 15:54:55,342 [restartedMain] INFO    - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 15:54:55,346 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 15:54:55,402 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 15:59:54,294 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 26876 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 15:59:54,297 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:59:54,342 [restartedMain] INFO    - The Class-Path manifest attribute in C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user01/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.3.0.0/oraclepki.jar
+2022-06-15 15:59:54,343 [restartedMain] INFO    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-15 15:59:54,858 [restartedMain] INFO    - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-15 15:59:54,924 [restartedMain] INFO    - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-06-15 15:59:55,530 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 15:59:56,063 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 15:59:56,158 [restartedMain] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 15:59:56,247 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 15:59:56,503 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 15:59:56,683 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 15:59:57,620 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 15:59:57,637 [restartedMain] INFO    - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 15:59:58,717 [restartedMain] INFO    - LiveReload server is running on port 35729
+2022-06-15 15:59:58,744 [restartedMain] INFO    - Started BatchEmailApplication in 4.796 seconds (JVM running for 5.667)
+2022-06-15 15:59:58,747 [restartedMain] INFO    - Try to send test email.
+2022-06-15 16:00:03,998 [restartedMain] INFO    - Test email has been sent to owenhsieh@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 16:00:03,998 [restartedMain] INFO    - Try to test check email flag.
+2022-06-15 16:00:03,998 [restartedMain] INFO    - Try to set FTP_BRANCH SEND_MAIL_FLAG to Failure.
+2022-06-15 16:00:04,027 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 16:00:04,110 [restartedMain] DEBUG    - select * from Batch_Job_Status where SEND_MAIL_FLAG in (?, ?)
+2022-06-15 16:00:04,133 [restartedMain] INFO    - Try to send email for db table:"RPTMART_RULE_DATA".
+2022-06-15 16:00:04,135 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:04,135 [restartedMain] INFO    - Try to send email for db table:"AF_CASE_STATUS".
+2022-06-15 16:00:04,136 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:04,136 [restartedMain] INFO    - Try to send email for db table:"FTP_BRANCH".
+2022-06-15 16:00:08,829 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 16:00:08,837 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 16:00:08,845 [restartedMain] INFO    - Completed.
+2022-06-15 16:00:08,845 [restartedMain] INFO    - Try to send email for db table:"RPTMART_01_RPT".
+2022-06-15 16:00:08,845 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:08,846 [restartedMain] INFO    - Try to send email for db table:"RPTMART_2_3_RPT".
+2022-06-15 16:00:08,846 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:08,846 [restartedMain] INFO    - Try to send email for db table:"RPTMART_14_RPT".
+2022-06-15 16:00:08,846 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:08,846 [restartedMain] INFO    - Try to send email for db table:"RPTMART_APPLY_DATA".
+2022-06-15 16:00:08,846 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:08,846 [restartedMain] INFO    - Try to send email for db table:"FTP_CUST_RELA".
+2022-06-15 16:00:08,846 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:00:08,847 [restartedMain] INFO    - All tasks have been completed.
+2022-06-15 16:00:08,851 [restartedMain] INFO    - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 16:00:08,854 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 16:00:08,894 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 16:01:18,834 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 23896 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 16:01:18,837 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 16:01:18,893 [restartedMain] INFO    - The Class-Path manifest attribute in C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user01/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.3.0.0/oraclepki.jar
+2022-06-15 16:01:18,893 [restartedMain] INFO    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-15 16:01:19,420 [restartedMain] INFO    - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-15 16:01:19,476 [restartedMain] INFO    - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-06-15 16:01:19,967 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 16:01:20,361 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 16:01:20,411 [restartedMain] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 16:01:20,481 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 16:01:20,685 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 16:01:20,832 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 16:01:21,629 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 16:01:21,638 [restartedMain] INFO    - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 16:01:22,203 [restartedMain] INFO    - LiveReload server is running on port 35729
+2022-06-15 16:01:22,224 [restartedMain] INFO    - Started BatchEmailApplication in 3.814 seconds (JVM running for 5.324)
+2022-06-15 16:01:22,227 [restartedMain] INFO    - Try to send test email.
+2022-06-15 16:01:31,439 [restartedMain] INFO    - Test email has been sent to owenhsieh@dawningtech.com.tw,samuellin@dawningtech.com.tw
+2022-06-15 16:01:31,439 [restartedMain] INFO    - Try to test check email flag.
+2022-06-15 16:01:31,439 [restartedMain] INFO    - Try to set FTP_BRANCH SEND_MAIL_FLAG to Failure.
+2022-06-15 16:01:31,468 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 16:01:31,565 [restartedMain] DEBUG    - select * from Batch_Job_Status where SEND_MAIL_FLAG in (?, ?)
+2022-06-15 16:01:31,592 [restartedMain] INFO    - Try to send email for db table:"RPTMART_RULE_DATA".
+2022-06-15 16:01:31,593 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,593 [restartedMain] INFO    - Try to send email for db table:"AF_CASE_STATUS".
+2022-06-15 16:01:31,594 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,594 [restartedMain] INFO    - Try to send email for db table:"FTP_BRANCH".
+2022-06-15 16:01:31,642 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 16:01:31,649 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 16:01:31,657 [restartedMain] INFO    - Completed.
+2022-06-15 16:01:31,658 [restartedMain] INFO    - Try to send email for db table:"RPTMART_01_RPT".
+2022-06-15 16:01:31,659 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,660 [restartedMain] INFO    - Try to send email for db table:"RPTMART_2_3_RPT".
+2022-06-15 16:01:31,661 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,662 [restartedMain] INFO    - Try to send email for db table:"RPTMART_14_RPT".
+2022-06-15 16:01:31,664 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,665 [restartedMain] INFO    - Try to send email for db table:"RPTMART_APPLY_DATA".
+2022-06-15 16:01:31,665 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,666 [restartedMain] INFO    - Try to send email for db table:"FTP_CUST_RELA".
+2022-06-15 16:01:31,667 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 16:01:31,667 [restartedMain] INFO    - All tasks have been completed.
+2022-06-15 16:01:31,675 [restartedMain] INFO    - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 16:01:31,680 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 16:01:31,722 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.

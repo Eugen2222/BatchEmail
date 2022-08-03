@@ -1,0 +1,1299 @@
+2022-06-15 09:56:25,759 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 9104 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 09:56:25,772 [restartedMain] DEBUG    - Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-06-15 09:56:25,773 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 09:56:26,476 [restartedMain] DEBUG    - Driver class oracle.jdbc.OracleDriver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@48824d6d
+2022-06-15 09:56:26,596 [restartedMain] DEBUG    - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-06-15 09:56:26,609 [restartedMain] DEBUG    - HikariPool-1 - configuration:
+2022-06-15 09:56:26,611 [restartedMain] DEBUG    - allowPoolSuspension................................false
+2022-06-15 09:56:26,611 [restartedMain] DEBUG    - autoCommit................................true
+2022-06-15 09:56:26,612 [restartedMain] DEBUG    - catalog................................none
+2022-06-15 09:56:26,612 [restartedMain] DEBUG    - connectionInitSql................................none
+2022-06-15 09:56:26,612 [restartedMain] DEBUG    - connectionTestQuery................................none
+2022-06-15 09:56:26,613 [restartedMain] DEBUG    - connectionTimeout................................30000
+2022-06-15 09:56:26,613 [restartedMain] DEBUG    - dataSource................................none
+2022-06-15 09:56:26,613 [restartedMain] DEBUG    - dataSourceClassName................................none
+2022-06-15 09:56:26,613 [restartedMain] DEBUG    - dataSourceJNDI................................none
+2022-06-15 09:56:26,614 [restartedMain] DEBUG    - dataSourceProperties................................{password=<masked>}
+2022-06-15 09:56:26,614 [restartedMain] DEBUG    - driverClassName................................"oracle.jdbc.OracleDriver"
+2022-06-15 09:56:26,615 [restartedMain] DEBUG    - exceptionOverrideClassName................................none
+2022-06-15 09:56:26,615 [restartedMain] DEBUG    - healthCheckProperties................................{}
+2022-06-15 09:56:26,615 [restartedMain] DEBUG    - healthCheckRegistry................................none
+2022-06-15 09:56:26,615 [restartedMain] DEBUG    - idleTimeout................................600000
+2022-06-15 09:56:26,615 [restartedMain] DEBUG    - initializationFailTimeout................................1
+2022-06-15 09:56:26,616 [restartedMain] DEBUG    - isolateInternalQueries................................false
+2022-06-15 09:56:26,616 [restartedMain] DEBUG    - jdbcUrl................................jdbc:oracle:thin:@10.70.12.26:1521/orclpdb.dw.com.tw
+2022-06-15 09:56:26,616 [restartedMain] DEBUG    - keepaliveTime................................0
+2022-06-15 09:56:26,617 [restartedMain] DEBUG    - leakDetectionThreshold................................0
+2022-06-15 09:56:26,617 [restartedMain] DEBUG    - maxLifetime................................1800000
+2022-06-15 09:56:26,617 [restartedMain] DEBUG    - maximumPoolSize................................10
+2022-06-15 09:56:26,617 [restartedMain] DEBUG    - metricRegistry................................none
+2022-06-15 09:56:26,618 [restartedMain] DEBUG    - metricsTrackerFactory................................none
+2022-06-15 09:56:26,618 [restartedMain] DEBUG    - minimumIdle................................10
+2022-06-15 09:56:26,618 [restartedMain] DEBUG    - password................................<masked>
+2022-06-15 09:56:26,618 [restartedMain] DEBUG    - poolName................................"HikariPool-1"
+2022-06-15 09:56:26,619 [restartedMain] DEBUG    - readOnly................................false
+2022-06-15 09:56:26,619 [restartedMain] DEBUG    - registerMbeans................................false
+2022-06-15 09:56:26,620 [restartedMain] DEBUG    - scheduledExecutor................................none
+2022-06-15 09:56:26,620 [restartedMain] DEBUG    - schema................................none
+2022-06-15 09:56:26,620 [restartedMain] DEBUG    - threadFactory................................internal
+2022-06-15 09:56:26,620 [restartedMain] DEBUG    - transactionIsolation................................default
+2022-06-15 09:56:26,621 [restartedMain] DEBUG    - username................................"ATFEOPCORE"
+2022-06-15 09:56:26,621 [restartedMain] DEBUG    - validationTimeout................................5000
+2022-06-15 09:56:26,621 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 09:56:26,961 [restartedMain] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@227eb176
+2022-06-15 09:56:26,962 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 09:56:27,009 [restartedMain] DEBUG    - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@48824d6d
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/workfile/CUB_etl/JavaEE/BatchEmail/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		batchEmail.dbTable.Batch_Job_Status]
+	Mapping files names []
+	Properties []
+2022-06-15 09:56:27,024 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-06-15 09:56:27,025 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-06-15 09:56:27,027 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-06-15 09:56:27,073 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-06-15 09:56:27,081 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 09:56:27,082 [restartedMain] DEBUG    - HHH000206: hibernate.properties not found
+2022-06-15 09:56:27,176 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6ada231c
+2022-06-15 09:56:27,246 [restartedMain] DEBUG    - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-06-15 09:56:27,257 [restartedMain] DEBUG    - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2022-06-15 09:56:27,258 [restartedMain] DEBUG    - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-06-15 09:56:27,272 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 09:56:27,278 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@21ff071d
+2022-06-15 09:56:27,314 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@3e127ffc
+2022-06-15 09:56:27,314 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@3e127ffc
+2022-06-15 09:56:27,314 [restartedMain] DEBUG    - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3e127ffc
+2022-06-15 09:56:27,315 [restartedMain] DEBUG    - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3a335091
+2022-06-15 09:56:27,316 [restartedMain] DEBUG    - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2fbc8df3
+2022-06-15 09:56:27,317 [restartedMain] DEBUG    - Adding type registration yes_no -> org.hibernate.type.YesNoType@1cad31d7
+2022-06-15 09:56:27,318 [restartedMain] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@12c60b6a
+2022-06-15 09:56:27,318 [restartedMain] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@12c60b6a
+2022-06-15 09:56:27,318 [restartedMain] DEBUG    - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@12c60b6a
+2022-06-15 09:56:27,320 [restartedMain] DEBUG    - Adding type registration character -> org.hibernate.type.CharacterType@469be116
+2022-06-15 09:56:27,321 [restartedMain] DEBUG    - Adding type registration char -> org.hibernate.type.CharacterType@469be116
+2022-06-15 09:56:27,321 [restartedMain] DEBUG    - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@469be116
+2022-06-15 09:56:27,322 [restartedMain] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@62a84e2f
+2022-06-15 09:56:27,323 [restartedMain] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@62a84e2f
+2022-06-15 09:56:27,323 [restartedMain] DEBUG    - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@62a84e2f
+2022-06-15 09:56:27,325 [restartedMain] DEBUG    - Adding type registration integer -> org.hibernate.type.IntegerType@b104421
+2022-06-15 09:56:27,325 [restartedMain] DEBUG    - Adding type registration int -> org.hibernate.type.IntegerType@b104421
+2022-06-15 09:56:27,325 [restartedMain] DEBUG    - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@b104421
+2022-06-15 09:56:27,327 [restartedMain] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@5da6f713
+2022-06-15 09:56:27,327 [restartedMain] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@5da6f713
+2022-06-15 09:56:27,327 [restartedMain] DEBUG    - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5da6f713
+2022-06-15 09:56:27,328 [restartedMain] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@2b5e6981
+2022-06-15 09:56:27,329 [restartedMain] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@2b5e6981
+2022-06-15 09:56:27,329 [restartedMain] DEBUG    - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2b5e6981
+2022-06-15 09:56:27,330 [restartedMain] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@de0c330
+2022-06-15 09:56:27,330 [restartedMain] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@de0c330
+2022-06-15 09:56:27,330 [restartedMain] DEBUG    - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@de0c330
+2022-06-15 09:56:27,331 [restartedMain] DEBUG    - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@62219c7f
+2022-06-15 09:56:27,331 [restartedMain] DEBUG    - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@62219c7f
+2022-06-15 09:56:27,332 [restartedMain] DEBUG    - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7342af9c
+2022-06-15 09:56:27,332 [restartedMain] DEBUG    - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7342af9c
+2022-06-15 09:56:27,332 [restartedMain] DEBUG    - Adding type registration string -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:27,333 [restartedMain] DEBUG    - Adding type registration java.lang.String -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:27,333 [restartedMain] DEBUG    - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@695ea20a
+2022-06-15 09:56:27,333 [restartedMain] DEBUG    - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@8fa82fa
+2022-06-15 09:56:27,334 [restartedMain] DEBUG    - Adding type registration url -> org.hibernate.type.UrlType@22c37420
+2022-06-15 09:56:27,334 [restartedMain] DEBUG    - Adding type registration java.net.URL -> org.hibernate.type.UrlType@22c37420
+2022-06-15 09:56:27,335 [restartedMain] DEBUG    - Adding type registration Duration -> org.hibernate.type.DurationType@4699f260
+2022-06-15 09:56:27,335 [restartedMain] DEBUG    - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4699f260
+2022-06-15 09:56:27,336 [restartedMain] DEBUG    - Adding type registration Instant -> org.hibernate.type.InstantType@2e8349bc
+2022-06-15 09:56:27,337 [restartedMain] DEBUG    - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2e8349bc
+2022-06-15 09:56:27,338 [restartedMain] DEBUG    - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7c129900
+2022-06-15 09:56:27,338 [restartedMain] DEBUG    - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7c129900
+2022-06-15 09:56:27,339 [restartedMain] DEBUG    - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5556b058
+2022-06-15 09:56:27,339 [restartedMain] DEBUG    - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5556b058
+2022-06-15 09:56:27,339 [restartedMain] DEBUG    - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2bd0aea6
+2022-06-15 09:56:27,339 [restartedMain] DEBUG    - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2bd0aea6
+2022-06-15 09:56:27,340 [restartedMain] DEBUG    - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@720505ee
+2022-06-15 09:56:27,341 [restartedMain] DEBUG    - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@720505ee
+2022-06-15 09:56:27,341 [restartedMain] DEBUG    - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5069eb02
+2022-06-15 09:56:27,341 [restartedMain] DEBUG    - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5069eb02
+2022-06-15 09:56:27,343 [restartedMain] DEBUG    - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7a18ec2f
+2022-06-15 09:56:27,343 [restartedMain] DEBUG    - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7a18ec2f
+2022-06-15 09:56:27,344 [restartedMain] DEBUG    - Adding type registration date -> org.hibernate.type.DateType@70939a82
+2022-06-15 09:56:27,344 [restartedMain] DEBUG    - Adding type registration java.sql.Date -> org.hibernate.type.DateType@70939a82
+2022-06-15 09:56:27,345 [restartedMain] DEBUG    - Adding type registration time -> org.hibernate.type.TimeType@4a61f7be
+2022-06-15 09:56:27,345 [restartedMain] DEBUG    - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4a61f7be
+2022-06-15 09:56:27,346 [restartedMain] DEBUG    - Adding type registration timestamp -> org.hibernate.type.TimestampType@6091cf60
+2022-06-15 09:56:27,346 [restartedMain] DEBUG    - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6091cf60
+2022-06-15 09:56:27,347 [restartedMain] DEBUG    - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6091cf60
+2022-06-15 09:56:27,348 [restartedMain] DEBUG    - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@44de627f
+2022-06-15 09:56:27,349 [restartedMain] DEBUG    - Adding type registration calendar -> org.hibernate.type.CalendarType@58c4a743
+2022-06-15 09:56:27,349 [restartedMain] DEBUG    - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@58c4a743
+2022-06-15 09:56:27,349 [restartedMain] DEBUG    - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@58c4a743
+2022-06-15 09:56:27,350 [restartedMain] DEBUG    - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7045436c
+2022-06-15 09:56:27,351 [restartedMain] DEBUG    - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@28c0512c
+2022-06-15 09:56:27,352 [restartedMain] DEBUG    - Adding type registration locale -> org.hibernate.type.LocaleType@464360da
+2022-06-15 09:56:27,352 [restartedMain] DEBUG    - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@464360da
+2022-06-15 09:56:27,353 [restartedMain] DEBUG    - Adding type registration currency -> org.hibernate.type.CurrencyType@2872bace
+2022-06-15 09:56:27,354 [restartedMain] DEBUG    - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2872bace
+2022-06-15 09:56:27,354 [restartedMain] DEBUG    - Adding type registration timezone -> org.hibernate.type.TimeZoneType@20ad714e
+2022-06-15 09:56:27,355 [restartedMain] DEBUG    - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@20ad714e
+2022-06-15 09:56:27,355 [restartedMain] DEBUG    - Adding type registration class -> org.hibernate.type.ClassType@6ba44442
+2022-06-15 09:56:27,356 [restartedMain] DEBUG    - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6ba44442
+2022-06-15 09:56:27,356 [restartedMain] DEBUG    - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5523d1b1
+2022-06-15 09:56:27,356 [restartedMain] DEBUG    - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5523d1b1
+2022-06-15 09:56:27,357 [restartedMain] DEBUG    - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7d5676a8
+2022-06-15 09:56:27,357 [restartedMain] DEBUG    - Adding type registration binary -> org.hibernate.type.BinaryType@172cfa92
+2022-06-15 09:56:27,358 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.BinaryType@172cfa92
+2022-06-15 09:56:27,358 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.BinaryType@172cfa92
+2022-06-15 09:56:27,358 [restartedMain] DEBUG    - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@37822aa1
+2022-06-15 09:56:27,359 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@37822aa1
+2022-06-15 09:56:27,359 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@37822aa1
+2022-06-15 09:56:27,359 [restartedMain] DEBUG    - Adding type registration row_version -> org.hibernate.type.RowVersionType@2f749559
+2022-06-15 09:56:27,360 [restartedMain] DEBUG    - Adding type registration image -> org.hibernate.type.ImageType@7c6712d8
+2022-06-15 09:56:27,360 [restartedMain] DEBUG    - Adding type registration characters -> org.hibernate.type.CharArrayType@3cb7cb6d
+2022-06-15 09:56:27,361 [restartedMain] DEBUG    - Adding type registration char[] -> org.hibernate.type.CharArrayType@3cb7cb6d
+2022-06-15 09:56:27,361 [restartedMain] DEBUG    - Adding type registration [C -> org.hibernate.type.CharArrayType@3cb7cb6d
+2022-06-15 09:56:27,361 [restartedMain] DEBUG    - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4e87eecc
+2022-06-15 09:56:27,361 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4e87eecc
+2022-06-15 09:56:27,362 [restartedMain] DEBUG    - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4e87eecc
+2022-06-15 09:56:27,362 [restartedMain] DEBUG    - Adding type registration text -> org.hibernate.type.TextType@4aa4f675
+2022-06-15 09:56:27,362 [restartedMain] DEBUG    - Adding type registration ntext -> org.hibernate.type.NTextType@4b766041
+2022-06-15 09:56:27,364 [restartedMain] DEBUG    - Adding type registration blob -> org.hibernate.type.BlobType@341c4d38
+2022-06-15 09:56:27,364 [restartedMain] DEBUG    - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@341c4d38
+2022-06-15 09:56:27,364 [restartedMain] DEBUG    - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1bf15b36
+2022-06-15 09:56:27,366 [restartedMain] DEBUG    - Adding type registration clob -> org.hibernate.type.ClobType@7be6a0a
+2022-06-15 09:56:27,366 [restartedMain] DEBUG    - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7be6a0a
+2022-06-15 09:56:27,367 [restartedMain] DEBUG    - Adding type registration nclob -> org.hibernate.type.NClobType@2bcc9c4f
+2022-06-15 09:56:27,367 [restartedMain] DEBUG    - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2bcc9c4f
+2022-06-15 09:56:27,367 [restartedMain] DEBUG    - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3f72cac1
+2022-06-15 09:56:27,368 [restartedMain] DEBUG    - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7054d6aa
+2022-06-15 09:56:27,369 [restartedMain] DEBUG    - Adding type registration serializable -> org.hibernate.type.SerializableType@596ebb3
+2022-06-15 09:56:27,371 [restartedMain] DEBUG    - Adding type registration object -> org.hibernate.type.ObjectType@11abaa38
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@11abaa38
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@61dbad0b
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7f6b92f6
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@34a7ee27
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@70c94a5f
+2022-06-15 09:56:27,372 [restartedMain] DEBUG    - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4cc612b8
+2022-06-15 09:56:27,373 [restartedMain] DEBUG    - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6f99c5f4
+2022-06-15 09:56:27,373 [restartedMain] DEBUG    - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6444d8f6
+2022-06-15 09:56:27,373 [restartedMain] DEBUG    - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5e65ed93
+2022-06-15 09:56:27,383 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59f47260
+2022-06-15 09:56:27,383 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@749597e5] into BootstrapContext; was [null]
+2022-06-15 09:56:27,383 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@749597e5) [was null]
+2022-06-15 09:56:27,383 [restartedMain] DEBUG    - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@c1e8dda] into BootstrapContext; was [null]
+2022-06-15 09:56:27,384 [restartedMain] DEBUG    - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@9a188a5] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@6f73e4aa]
+2022-06-15 09:56:27,398 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@749597e5]
+2022-06-15 09:56:27,398 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@749597e5]
+2022-06-15 09:56:27,409 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-06-15 09:56:27,409 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-06-15 09:56:27,410 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 09:56:27,410 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 09:56:27,410 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-06-15 09:56:27,411 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-06-15 09:56:27,412 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-06-15 09:56:27,413 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 09:56:27,414 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-06-15 09:56:27,414 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-06-15 09:56:27,415 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-06-15 09:56:27,415 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-06-15 09:56:27,415 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 09:56:27,416 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-06-15 09:56:27,421 [restartedMain] DEBUG    - Database ->
+       name : Oracle
+    version : Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+      major : 19
+      minor : 0
+2022-06-15 09:56:27,421 [restartedMain] DEBUG    - Driver ->
+       name : Oracle JDBC driver
+    version : 21.3.0.0.0
+      major : 21
+      minor : 3
+2022-06-15 09:56:27,421 [restartedMain] DEBUG    - JDBC version : 4.2
+2022-06-15 09:56:27,437 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 09:56:27,491 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@42f01ca1
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.MaterializedBlobType@1bf15b36
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@172cfa92
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.MaterializedBlobType@1bf15b36
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@172cfa92
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrappedMaterializedBlobType@6f48ebac
+2022-06-15 09:56:27,585 [restartedMain] DEBUG    - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@37822aa1
+2022-06-15 09:56:27,586 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrappedMaterializedBlobType@6f48ebac
+2022-06-15 09:56:27,586 [restartedMain] DEBUG    - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@37822aa1
+2022-06-15 09:56:27,587 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@64489b90] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@40b04a3a]
+2022-06-15 09:56:27,592 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6aca76fd
+2022-06-15 09:56:27,624 [restartedMain] DEBUG    - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-06-15 09:56:27,634 [restartedMain] DEBUG    - Binding entity from annotated class: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 09:56:27,651 [restartedMain] DEBUG    - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-06-15 09:56:27,655 [restartedMain] DEBUG    - Import with entity name Batch_Job_Status
+2022-06-15 09:56:27,657 [restartedMain] DEBUG    - Bind entity batchEmail.dbTable.Batch_Job_Status on table batch_job_status
+2022-06-15 09:56:27,669 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_name, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,672 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 09:56:27,672 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 09:56:27,672 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_NAME with lazy=false
+2022-06-15 09:56:27,673 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_NAME]
+2022-06-15 09:56:27,675 [restartedMain] DEBUG    - building SimpleValue for BATCH_NAME
+2022-06-15 09:56:27,676 [restartedMain] DEBUG    - Building property BATCH_NAME
+2022-06-15 09:56:27,677 [restartedMain] DEBUG    - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(batch_name)]), BATCH_NAME, assigned, , ...)
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_category, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_CATEGORY with lazy=false
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_CATEGORY]
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - building SimpleValue for BATCH_CATEGORY
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - Building property BATCH_CATEGORY
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_status, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_STATUS with lazy=false
+2022-06-15 09:56:27,678 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_STATUS]
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - building SimpleValue for BATCH_STATUS
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - Building property BATCH_STATUS
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=end_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - MetadataSourceProcessor property END_TM with lazy=false
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:END_TM]
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - building SimpleValue for END_TM
+2022-06-15 09:56:27,679 [restartedMain] DEBUG    - Building property END_TM
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=max_date, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - MetadataSourceProcessor property MAX_DATE with lazy=false
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:MAX_DATE]
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - building SimpleValue for MAX_DATE
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - Building property MAX_DATE
+2022-06-15 09:56:27,680 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_content, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,681 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_CONTENT with lazy=false
+2022-06-15 09:56:27,681 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_CONTENT]
+2022-06-15 09:56:27,681 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_CONTENT
+2022-06-15 09:56:27,681 [restartedMain] DEBUG    - Building property SEND_MAIL_CONTENT
+2022-06-15 09:56:27,681 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_flag, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_FLAG with lazy=false
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_FLAG]
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_FLAG
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - Building property SEND_MAIL_FLAG
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_object, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,683 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_OBJECT with lazy=false
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_OBJECT]
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_OBJECT
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - Building property SEND_MAIL_OBJECT
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_subject, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_SUBJECT with lazy=false
+2022-06-15 09:56:27,684 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_SUBJECT]
+2022-06-15 09:56:27,685 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 09:56:27,685 [restartedMain] DEBUG    - Building property SEND_MAIL_SUBJECT
+2022-06-15 09:56:27,685 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_count, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,686 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_COUNT with lazy=false
+2022-06-15 09:56:27,686 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_COUNT]
+2022-06-15 09:56:27,686 [restartedMain] DEBUG    - building SimpleValue for SOURCE_COUNT
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - Building property SOURCE_COUNT
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_file_name, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_FILE_NAME with lazy=false
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_FILE_NAME]
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - building SimpleValue for SOURCE_FILE_NAME
+2022-06-15 09:56:27,687 [restartedMain] DEBUG    - Building property SOURCE_FILE_NAME
+2022-06-15 09:56:27,688 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=start_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,688 [restartedMain] DEBUG    - MetadataSourceProcessor property START_TM with lazy=false
+2022-06-15 09:56:27,688 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:START_TM]
+2022-06-15 09:56:27,688 [restartedMain] DEBUG    - building SimpleValue for START_TM
+2022-06-15 09:56:27,688 [restartedMain] DEBUG    - Building property START_TM
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=target_count, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - MetadataSourceProcessor property TARGET_COUNT with lazy=false
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:TARGET_COUNT]
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - building SimpleValue for TARGET_COUNT
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - Building property TARGET_COUNT
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=update_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 09:56:27,689 [restartedMain] DEBUG    - MetadataSourceProcessor property UPDATE_TM with lazy=false
+2022-06-15 09:56:27,690 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:UPDATE_TM]
+2022-06-15 09:56:27,690 [restartedMain] DEBUG    - building SimpleValue for UPDATE_TM
+2022-06-15 09:56:27,690 [restartedMain] DEBUG    - Building property UPDATE_TM
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_NAME
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_CATEGORY
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_STATUS
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for END_TM
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for MAX_DATE
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_CONTENT
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_FLAG
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_OBJECT
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 09:56:27,696 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_COUNT
+2022-06-15 09:56:27,697 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_FILE_NAME
+2022-06-15 09:56:27,697 [restartedMain] DEBUG    - Starting fillSimpleValue for START_TM
+2022-06-15 09:56:27,697 [restartedMain] DEBUG    - Starting fillSimpleValue for TARGET_COUNT
+2022-06-15 09:56:27,697 [restartedMain] DEBUG    - Starting fillSimpleValue for UPDATE_TM
+2022-06-15 09:56:27,698 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@39a7c814
+2022-06-15 09:56:27,698 [restartedMain] DEBUG    - Forcing column [batch_name] to be non-null as it is part of the primary key for table [batch_job_status]
+2022-06-15 09:56:27,730 [restartedMain] DEBUG    - Building session factory
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - SessionFactory name : null
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Automatic flush during beforeCompletion(): enabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Automatic session close at end of transaction: disabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Statistics: disabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Deleted entity synthetic identifier rollback: disabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Default entity-mode: pojo
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Allow initialization of lazy state outside session : disabled
+2022-06-15 09:56:27,731 [restartedMain] DEBUG    - Using BatchFetchStyle : LEGACY
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Default batch fetch size: -1
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Maximum outer join fetch depth: null
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Default null ordering: NONE
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Order SQL updates by primary key: disabled
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Order SQL inserts for batching: disabled
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - multi-tenancy strategy : NONE
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - JTA Track by Thread: enabled
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Query language substitutions: {}
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Named query checking : enabled
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Second-level cache: disabled
+2022-06-15 09:56:27,732 [restartedMain] DEBUG    - Second-level query cache: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Second-level query cache factory: null
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Second-level cache region prefix: null
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Optimize second-level cache for minimal puts: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Structured second-level cache entries: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Second-level cache direct-reference entries: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Automatic eviction of collection cache: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - JDBC batch size: 15
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - JDBC batch updates for versioned data: enabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Scrollable result sets: enabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - Wrap result sets: disabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - JDBC3 getGeneratedKeys(): enabled
+2022-06-15 09:56:27,733 [restartedMain] DEBUG    - JDBC result set fetch size: null
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - Connection release mode: ON_CLOSE
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - Generate SQL with comments: disabled
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - JPA compliance - query : disabled
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - JPA compliance - closed-handling : disabled
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - JPA compliance - lists : disabled
+2022-06-15 09:56:27,734 [restartedMain] DEBUG    - JPA compliance - transactions : disabled
+2022-06-15 09:56:27,776 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 09:56:27,777 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 09:56:27,787 [restartedMain] DEBUG    - Session factory constructed with filter configurations : {}
+2022-06-15 09:56:27,787 [restartedMain] DEBUG    - Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=17, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7771d430, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=MS950, hibernate.dialect=org.hibernate.dialect.Oracle12cDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.6.4\spring-boot-starter-data-jpa-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.6.4\spring-boot-starter-aop-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aop\5.3.16\spring-aop-5.3.16.jar;C:\Users\user01\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.6.4\spring-boot-starter-jdbc-2.6.4.jar;C:\Users\user01\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jdbc\5.3.16\spring-jdbc-5.3.16.jar;C:\Users\user01\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\user01\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\user01\.m2\repository\org\hibernate\hibernate-core\5.6.5.Final\hibernate-core-5.6.5.Final.jar;C:\Users\user01\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\user01\.m2\repository\net\bytebuddy\byte-buddy\1.11.22\byte-buddy-1.11.22.jar;C:\Users\user01\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\user01\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\user01\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\user01\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.6\jaxb-runtime-2.3.6.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\txw2\2.3.6\txw2-2.3.6.jar;C:\Users\user01\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-jpa\2.6.2\spring-data-jpa-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-commons\2.6.2\spring-data-commons-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-orm\5.3.16\spring-orm-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context\5.3.16\spring-context-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-expression\5.3.16\spring-expression-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-tx\5.3.16\spring-tx-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-beans\5.3.16\spring-beans-5.3.16.jar;C:\Users\user01\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aspects\5.3.16\spring-aspects-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-mail\2.6.4\spring-boot-starter-mail-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter\2.6.4\spring-boot-starter-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.6.4\spring-boot-starter-logging-2.6.4.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-classic\1.2.10\logback-classic-1.2.10.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-core\1.2.10\logback-core-1.2.10.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.1\log4j-to-slf4j-2.17.1.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\user01\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\user01\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\user01\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context-support\5.3.16\spring-context-support-5.3.16.jar;C:\Users\user01\.m2\repository\com\sun\mail\jakarta.mail\1.6.7\jakarta.mail-1.6.7.jar;C:\Users\user01\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-devtools\2.6.4\spring-boot-devtools-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot\2.6.4\spring-boot-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.4\spring-boot-autoconfigure-2.6.4.jar;C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar;C:\Users\user01\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\user01\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\user01\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-core\5.3.16\spring-core-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jcl\5.3.16\spring-jcl-5.3.16.jar, com.sun.management.jmxremote.authenticate=false, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=Asia/Taipei, jakarta.persistence.sharedCache.mode=UNSPECIFIED, java.vm.specification.version=17, os.name=Windows 10, javax.persistence.validation.mode=AUTO, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), sun.java.launcher=SUN_STANDARD, user.country=TW, sun.boot.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=batchEmail.BatchEmailApplication test, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@12eb3836, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, spring.boot.project.name=BatchEmail, user.home=C:\Users\user01, user.language=zh, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.2+8, user.name=user01, spring.jmx.enabled=true, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Temurin-17.0.2+8, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\user01\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, com.sun.management.jmxremote.port=64881, java.version=17.0.2, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\workfile\CUB_etl\JavaEE\BatchEmail, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=9104, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@409a1e05, native.encoding=MS950, java.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Java\jre1.8.0_202\bin;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Program Files\SASHome\Secure\ccme4;C:\Users\user01\AppData\Local\Microsoft\WindowsApps;C:\Users\user01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user01\AppData\Roaming\npm;C:\ProgramData\user01\GitHubDesktop\bin;C:\Users\user01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Azure Data Studio\bin;C:\WINDOWS\system32;;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, emulated-client, java.vm.version=17.0.2+8, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, java.rmi.server.hostname=localhost, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), CONSOLE_LOG_PATTERN=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n, java.class.version=61.0}
+2022-06-15 09:56:27,798 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@433d0317
+2022-06-15 09:56:27,800 [restartedMain] DEBUG    - Skipping JACC integration as it was not enabled
+2022-06-15 09:56:27,801 [restartedMain] DEBUG    - Instantiated session factory
+2022-06-15 09:56:27,801 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@64489b90] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@2526e8c2]
+2022-06-15 09:56:27,849 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 09:56:27,849 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 09:56:27,904 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@457e30a0
+2022-06-15 09:56:28,001 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@46bc9af7
+2022-06-15 09:56:28,002 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    - Static SQL for entity: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    -  Version select: select batch_name from batch_job_status where batch_name =?
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    -  Snapshot select: select batch_job__.batch_name, batch_job__.batch_category as batch_category2_0_, batch_job__.batch_status as batch_status3_0_, batch_job__.end_tm as end_tm4_0_, batch_job__.max_date as max_date5_0_, batch_job__.send_mail_content as send_mail_content6_0_, batch_job__.send_mail_flag as send_mail_flag7_0_, batch_job__.send_mail_object as send_mail_object8_0_, batch_job__.send_mail_subject as send_mail_subject9_0_, batch_job__.source_count as source_count10_0_, batch_job__.source_file_name as source_file_name11_0_, batch_job__.start_tm as start_tm12_0_, batch_job__.target_count as target_count13_0_, batch_job__.update_tm as update_tm14_0_ from batch_job_status batch_job__ where batch_job__.batch_name=?
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    -  Insert 0: insert into batch_job_status (batch_category, batch_status, end_tm, max_date, send_mail_content, send_mail_flag, send_mail_object, send_mail_subject, source_count, source_file_name, start_tm, target_count, update_tm, batch_name) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    -  Update 0: update batch_job_status set batch_category=?, batch_status=?, end_tm=?, max_date=?, send_mail_content=?, send_mail_flag=?, send_mail_object=?, send_mail_subject=?, source_count=?, source_file_name=?, start_tm=?, target_count=?, update_tm=? where batch_name=?
+2022-06-15 09:56:28,049 [restartedMain] DEBUG    -  Delete 0: delete from batch_job_status where batch_name=?
+2022-06-15 09:56:28,078 [restartedMain] DEBUG    - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45763f29]
+2022-06-15 09:56:28,079 [restartedMain] DEBUG    - Visiting attribute path : BATCH_CATEGORY
+2022-06-15 09:56:28,079 [restartedMain] DEBUG    - Visiting attribute path : BATCH_STATUS
+2022-06-15 09:56:28,079 [restartedMain] DEBUG    - Visiting attribute path : END_TM
+2022-06-15 09:56:28,079 [restartedMain] DEBUG    - Visiting attribute path : MAX_DATE
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_CONTENT
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_FLAG
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_OBJECT
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_SUBJECT
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_COUNT
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_FILE_NAME
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : START_TM
+2022-06-15 09:56:28,080 [restartedMain] DEBUG    - Visiting attribute path : TARGET_COUNT
+2022-06-15 09:56:28,081 [restartedMain] DEBUG    - Visiting attribute path : UPDATE_TM
+2022-06-15 09:56:28,081 [restartedMain] DEBUG    - Building LoadPlan...
+2022-06-15 09:56:28,089 [restartedMain] DEBUG    - processing queryspace <gen:0>
+2022-06-15 09:56:28,092 [restartedMain] DEBUG    - LoadPlan(entity=batchEmail.dbTable.Batch_Job_Status)
+    - Returns
+       - EntityReturnImpl(entity=batchEmail.dbTable.Batch_Job_Status, querySpaceUid=<gen:0>, path=batchEmail.dbTable.Batch_Job_Status)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=batchEmail.dbTable.Batch_Job_Status)
+          - SQL table alias mapping - batch_job_0_
+          - alias suffix - 0_
+          - suffixed key columns - {batch_name1_0_0_}
+
+2022-06-15 09:56:28,094 [restartedMain] DEBUG    - Static select for entity batchEmail.dbTable.Batch_Job_Status [NONE]: select batch_job_0_.batch_name as batch_name1_0_0_, batch_job_0_.batch_category as batch_category2_0_0_, batch_job_0_.batch_status as batch_status3_0_0_, batch_job_0_.end_tm as end_tm4_0_0_, batch_job_0_.max_date as max_date5_0_0_, batch_job_0_.send_mail_content as send_mail_content6_0_0_, batch_job_0_.send_mail_flag as send_mail_flag7_0_0_, batch_job_0_.send_mail_object as send_mail_object8_0_0_, batch_job_0_.send_mail_subject as send_mail_subject9_0_0_, batch_job_0_.source_count as source_count10_0_0_, batch_job_0_.source_file_name as source_file_name11_0_0_, batch_job_0_.start_tm as start_tm12_0_0_, batch_job_0_.target_count as target_count13_0_0_, batch_job_0_.update_tm as update_tm14_0_0_ from batch_job_status batch_job_0_ where batch_job_0_.batch_name=?
+2022-06-15 09:56:28,117 [restartedMain] DEBUG    - No actions specified; doing nothing
+2022-06-15 09:56:28,117 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 09:56:28,118 [restartedMain] DEBUG    - Checking 0 named HQL queries
+2022-06-15 09:56:28,118 [restartedMain] DEBUG    - Checking 0 named SQL queries
+2022-06-15 09:56:28,122 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 09:56:28,126 [restartedMain] DEBUG    - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@82fa720
+2022-06-15 09:56:28,126 [restartedMain] DEBUG    - Registering SessionFactory: fc75995d-1a22-436d-81fc-f2ca2e6b3b9c (<unnamed>)
+2022-06-15 09:56:28,126 [restartedMain] DEBUG    - Not binding SessionFactory to JNDI, no JNDI name configured
+2022-06-15 09:56:28,261 [restartedMain] DEBUG    - Statistics initialized [enabled=false]
+2022-06-15 09:56:28,386 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,394 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,397 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,408 [restartedMain] DEBUG    - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@205dd9f1
+2022-06-15 09:56:28,429 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SOURCE_COUNT = ?1 where BATCH_NAME = ?2
+2022-06-15 09:56:28,434 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,439 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SOURCE_COUNT'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 09:56:28,455 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 09:56:28,464 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 09:56:28,465 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,466 [restartedMain] DEBUG    - getDataType() : SOURCE_COUNT -> org.hibernate.type.IntegerType@b104421
+2022-06-15 09:56:28,467 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SOURCE_COUNT -> source_count
+2022-06-15 09:56:28,468 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,469 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,469 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 09:56:28,469 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 09:56:28,469 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 09:56:28,470 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'source_count' {propertyName=SOURCE_COUNT,dereferenceType=PRIMITIVE,getPropertyPath=SOURCE_COUNT,path={synthetic-alias}.SOURCE_COUNT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SOURCE_COUNT' {originalText=SOURCE_COUNT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.IntegerType@b104421}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@2f6400cf}
+
+2022-06-15 09:56:28,470 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,474 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,479 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,480 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set UPDATE_TM = CURRENT_TIMESTAMP where BATCH_NAME = ?1
+2022-06-15 09:56:28,481 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,481 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'UPDATE_TM'
+    |     \-[IDENT] Node: 'CURRENT_TIMESTAMP'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '1'
+
+2022-06-15 09:56:28,481 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 09:56:28,481 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 09:56:28,482 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,482 [restartedMain] DEBUG    - getDataType() : UPDATE_TM -> org.hibernate.type.TimestampType@6091cf60
+2022-06-15 09:56:28,482 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.UPDATE_TM -> update_tm
+2022-06-15 09:56:28,483 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,483 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,483 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 09:56:28,483 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 09:56:28,484 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 09:56:28,484 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'update_tm' {propertyName=UPDATE_TM,dereferenceType=PRIMITIVE,getPropertyPath=UPDATE_TM,path={synthetic-alias}.UPDATE_TM,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'UPDATE_TM' {originalText=UPDATE_TM}
+    |     \-[IDENT] IdentNode: 'CURRENT_TIMESTAMP' {originalText=CURRENT_TIMESTAMP}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@2f6400cf}
+
+2022-06-15 09:56:28,484 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,484 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,485 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,487 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SEND_MAIL_FLAG = ?1 where BATCH_NAME = ?2
+2022-06-15 09:56:28,488 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,488 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SEND_MAIL_FLAG'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 09:56:28,488 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - getDataType() : SEND_MAIL_FLAG -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SEND_MAIL_FLAG -> send_mail_flag
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,489 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 09:56:28,490 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 09:56:28,490 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 09:56:28,490 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'send_mail_flag' {propertyName=SEND_MAIL_FLAG,dereferenceType=PRIMITIVE,getPropertyPath=SEND_MAIL_FLAG,path={synthetic-alias}.SEND_MAIL_FLAG,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SEND_MAIL_FLAG' {originalText=SEND_MAIL_FLAG}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@2f6400cf}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@2f6400cf}
+
+2022-06-15 09:56:28,490 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,490 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,491 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 09:56:28,492 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SEND_MAIL_OBJECT = ?1 where BATCH_NAME = ?2
+2022-06-15 09:56:28,492 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,492 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SEND_MAIL_OBJECT'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 09:56:28,492 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 09:56:28,493 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 09:56:28,493 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,493 [restartedMain] DEBUG    - getDataType() : SEND_MAIL_OBJECT -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,493 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SEND_MAIL_OBJECT -> send_mail_object
+2022-06-15 09:56:28,493 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@2f6400cf
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'send_mail_object' {propertyName=SEND_MAIL_OBJECT,dereferenceType=PRIMITIVE,getPropertyPath=SEND_MAIL_OBJECT,path={synthetic-alias}.SEND_MAIL_OBJECT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SEND_MAIL_OBJECT' {originalText=SEND_MAIL_OBJECT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@2f6400cf}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@2f6400cf}
+
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,494 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 09:56:28,603 [restartedMain] INFO    - Started BatchEmailApplication in 3.179 seconds (JVM running for 4.067)
+2022-06-15 09:56:28,605 [restartedMain] INFO    - Try to send test email.
+2022-06-15 09:56:49,700 [restartedMain] DEBUG    - HHH000031: Closing
+2022-06-15 09:56:49,701 [restartedMain] DEBUG    - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@44fe2a53] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2526e8c2]
+2022-06-15 09:56:49,702 [restartedMain] DEBUG    - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-06-15 09:56:49,703 [restartedMain] DEBUG    - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-06-15 09:56:49,705 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 09:56:49,705 [restartedMain] DEBUG    - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 09:56:49,707 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@227eb176: (connection evicted)
+2022-06-15 09:56:49,712 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6ada231c: (connection evicted)
+2022-06-15 09:56:49,715 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@21ff071d: (connection evicted)
+2022-06-15 09:56:49,719 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@59f47260: (connection evicted)
+2022-06-15 09:56:49,722 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@42f01ca1: (connection evicted)
+2022-06-15 09:56:49,727 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6aca76fd: (connection evicted)
+2022-06-15 09:56:49,734 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@39a7c814: (connection evicted)
+2022-06-15 09:56:49,741 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@433d0317: (connection evicted)
+2022-06-15 09:56:49,746 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@457e30a0: (connection evicted)
+2022-06-15 09:56:49,750 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@46bc9af7: (connection evicted)
+2022-06-15 09:56:49,754 [restartedMain] DEBUG    - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-06-15 09:56:49,755 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 10:22:12,090 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 18180 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 10:22:12,094 [restartedMain] DEBUG    - Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-06-15 10:22:12,095 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 10:22:12,947 [restartedMain] DEBUG    - Driver class oracle.jdbc.OracleDriver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c6ad219
+2022-06-15 10:22:13,076 [restartedMain] DEBUG    - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-06-15 10:22:13,092 [restartedMain] DEBUG    - HikariPool-1 - configuration:
+2022-06-15 10:22:13,094 [restartedMain] DEBUG    - allowPoolSuspension................................false
+2022-06-15 10:22:13,094 [restartedMain] DEBUG    - autoCommit................................true
+2022-06-15 10:22:13,095 [restartedMain] DEBUG    - catalog................................none
+2022-06-15 10:22:13,095 [restartedMain] DEBUG    - connectionInitSql................................none
+2022-06-15 10:22:13,095 [restartedMain] DEBUG    - connectionTestQuery................................none
+2022-06-15 10:22:13,095 [restartedMain] DEBUG    - connectionTimeout................................30000
+2022-06-15 10:22:13,096 [restartedMain] DEBUG    - dataSource................................none
+2022-06-15 10:22:13,096 [restartedMain] DEBUG    - dataSourceClassName................................none
+2022-06-15 10:22:13,096 [restartedMain] DEBUG    - dataSourceJNDI................................none
+2022-06-15 10:22:13,097 [restartedMain] DEBUG    - dataSourceProperties................................{password=<masked>}
+2022-06-15 10:22:13,097 [restartedMain] DEBUG    - driverClassName................................"oracle.jdbc.OracleDriver"
+2022-06-15 10:22:13,098 [restartedMain] DEBUG    - exceptionOverrideClassName................................none
+2022-06-15 10:22:13,098 [restartedMain] DEBUG    - healthCheckProperties................................{}
+2022-06-15 10:22:13,098 [restartedMain] DEBUG    - healthCheckRegistry................................none
+2022-06-15 10:22:13,098 [restartedMain] DEBUG    - idleTimeout................................600000
+2022-06-15 10:22:13,099 [restartedMain] DEBUG    - initializationFailTimeout................................1
+2022-06-15 10:22:13,099 [restartedMain] DEBUG    - isolateInternalQueries................................false
+2022-06-15 10:22:13,099 [restartedMain] DEBUG    - jdbcUrl................................jdbc:oracle:thin:@10.70.12.26:1521/orclpdb.dw.com.tw
+2022-06-15 10:22:13,099 [restartedMain] DEBUG    - keepaliveTime................................0
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - leakDetectionThreshold................................0
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - maxLifetime................................1800000
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - maximumPoolSize................................10
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - metricRegistry................................none
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - metricsTrackerFactory................................none
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - minimumIdle................................10
+2022-06-15 10:22:13,100 [restartedMain] DEBUG    - password................................<masked>
+2022-06-15 10:22:13,101 [restartedMain] DEBUG    - poolName................................"HikariPool-1"
+2022-06-15 10:22:13,101 [restartedMain] DEBUG    - readOnly................................false
+2022-06-15 10:22:13,101 [restartedMain] DEBUG    - registerMbeans................................false
+2022-06-15 10:22:13,102 [restartedMain] DEBUG    - scheduledExecutor................................none
+2022-06-15 10:22:13,102 [restartedMain] DEBUG    - schema................................none
+2022-06-15 10:22:13,102 [restartedMain] DEBUG    - threadFactory................................internal
+2022-06-15 10:22:13,102 [restartedMain] DEBUG    - transactionIsolation................................default
+2022-06-15 10:22:13,102 [restartedMain] DEBUG    - username................................"ATFEOPCORE"
+2022-06-15 10:22:13,103 [restartedMain] DEBUG    - validationTimeout................................5000
+2022-06-15 10:22:13,103 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 10:22:13,503 [restartedMain] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4c08fb4b
+2022-06-15 10:22:13,506 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 10:22:13,554 [restartedMain] DEBUG    - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c6ad219
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/workfile/CUB_etl/JavaEE/BatchEmail/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		batchEmail.dbTable.Batch_Job_Status]
+	Mapping files names []
+	Properties []
+2022-06-15 10:22:13,572 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-06-15 10:22:13,576 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-06-15 10:22:13,578 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-06-15 10:22:13,619 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-06-15 10:22:13,637 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 10:22:13,638 [restartedMain] DEBUG    - HHH000206: hibernate.properties not found
+2022-06-15 10:22:13,733 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@642d0868
+2022-06-15 10:22:13,827 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@181df567
+2022-06-15 10:22:13,829 [restartedMain] DEBUG    - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-06-15 10:22:13,842 [restartedMain] DEBUG    - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2022-06-15 10:22:13,843 [restartedMain] DEBUG    - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-06-15 10:22:13,857 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 10:22:13,892 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@14249c1e
+2022-06-15 10:22:13,893 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@14249c1e
+2022-06-15 10:22:13,894 [restartedMain] DEBUG    - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@14249c1e
+2022-06-15 10:22:13,895 [restartedMain] DEBUG    - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@54b31a94
+2022-06-15 10:22:13,895 [restartedMain] DEBUG    - Adding type registration true_false -> org.hibernate.type.TrueFalseType@3108a4d
+2022-06-15 10:22:13,896 [restartedMain] DEBUG    - Adding type registration yes_no -> org.hibernate.type.YesNoType@67813de2
+2022-06-15 10:22:13,897 [restartedMain] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@461fd669
+2022-06-15 10:22:13,897 [restartedMain] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@461fd669
+2022-06-15 10:22:13,898 [restartedMain] DEBUG    - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@461fd669
+2022-06-15 10:22:13,901 [restartedMain] DEBUG    - Adding type registration character -> org.hibernate.type.CharacterType@721377
+2022-06-15 10:22:13,901 [restartedMain] DEBUG    - Adding type registration char -> org.hibernate.type.CharacterType@721377
+2022-06-15 10:22:13,901 [restartedMain] DEBUG    - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@721377
+2022-06-15 10:22:13,902 [restartedMain] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@2de9fc72
+2022-06-15 10:22:13,902 [restartedMain] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@2de9fc72
+2022-06-15 10:22:13,902 [restartedMain] DEBUG    - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2de9fc72
+2022-06-15 10:22:13,903 [restartedMain] DEBUG    - Adding type registration integer -> org.hibernate.type.IntegerType@69c198dd
+2022-06-15 10:22:13,903 [restartedMain] DEBUG    - Adding type registration int -> org.hibernate.type.IntegerType@69c198dd
+2022-06-15 10:22:13,903 [restartedMain] DEBUG    - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@69c198dd
+2022-06-15 10:22:13,904 [restartedMain] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@7986b41f
+2022-06-15 10:22:13,904 [restartedMain] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@7986b41f
+2022-06-15 10:22:13,904 [restartedMain] DEBUG    - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7986b41f
+2022-06-15 10:22:13,905 [restartedMain] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@58a7a689
+2022-06-15 10:22:13,905 [restartedMain] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@58a7a689
+2022-06-15 10:22:13,905 [restartedMain] DEBUG    - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@58a7a689
+2022-06-15 10:22:13,907 [restartedMain] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@48f0913e
+2022-06-15 10:22:13,907 [restartedMain] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@48f0913e
+2022-06-15 10:22:13,908 [restartedMain] DEBUG    - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@48f0913e
+2022-06-15 10:22:13,909 [restartedMain] DEBUG    - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1ab00e50
+2022-06-15 10:22:13,909 [restartedMain] DEBUG    - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1ab00e50
+2022-06-15 10:22:13,910 [restartedMain] DEBUG    - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1108ebd8
+2022-06-15 10:22:13,910 [restartedMain] DEBUG    - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1108ebd8
+2022-06-15 10:22:13,911 [restartedMain] DEBUG    - Adding type registration string -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:13,911 [restartedMain] DEBUG    - Adding type registration java.lang.String -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:13,911 [restartedMain] DEBUG    - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5e5334f4
+2022-06-15 10:22:13,912 [restartedMain] DEBUG    - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4b53b181
+2022-06-15 10:22:13,913 [restartedMain] DEBUG    - Adding type registration url -> org.hibernate.type.UrlType@708b6793
+2022-06-15 10:22:13,914 [restartedMain] DEBUG    - Adding type registration java.net.URL -> org.hibernate.type.UrlType@708b6793
+2022-06-15 10:22:13,915 [restartedMain] DEBUG    - Adding type registration Duration -> org.hibernate.type.DurationType@ab07c0
+2022-06-15 10:22:13,915 [restartedMain] DEBUG    - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@ab07c0
+2022-06-15 10:22:13,917 [restartedMain] DEBUG    - Adding type registration Instant -> org.hibernate.type.InstantType@398587b3
+2022-06-15 10:22:13,917 [restartedMain] DEBUG    - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@398587b3
+2022-06-15 10:22:13,918 [restartedMain] DEBUG    - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4ca0ecb5
+2022-06-15 10:22:13,918 [restartedMain] DEBUG    - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4ca0ecb5
+2022-06-15 10:22:13,919 [restartedMain] DEBUG    - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@74f413d4
+2022-06-15 10:22:13,919 [restartedMain] DEBUG    - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@74f413d4
+2022-06-15 10:22:13,920 [restartedMain] DEBUG    - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4f4e60cf
+2022-06-15 10:22:13,920 [restartedMain] DEBUG    - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4f4e60cf
+2022-06-15 10:22:13,920 [restartedMain] DEBUG    - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6b74669e
+2022-06-15 10:22:13,920 [restartedMain] DEBUG    - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6b74669e
+2022-06-15 10:22:13,921 [restartedMain] DEBUG    - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3ad9cc53
+2022-06-15 10:22:13,921 [restartedMain] DEBUG    - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3ad9cc53
+2022-06-15 10:22:13,923 [restartedMain] DEBUG    - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7973b4c7
+2022-06-15 10:22:13,923 [restartedMain] DEBUG    - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7973b4c7
+2022-06-15 10:22:13,925 [restartedMain] DEBUG    - Adding type registration date -> org.hibernate.type.DateType@57a6d372
+2022-06-15 10:22:13,926 [restartedMain] DEBUG    - Adding type registration java.sql.Date -> org.hibernate.type.DateType@57a6d372
+2022-06-15 10:22:13,927 [restartedMain] DEBUG    - Adding type registration time -> org.hibernate.type.TimeType@dd22e19
+2022-06-15 10:22:13,928 [restartedMain] DEBUG    - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@dd22e19
+2022-06-15 10:22:13,928 [restartedMain] DEBUG    - Adding type registration timestamp -> org.hibernate.type.TimestampType@64868758
+2022-06-15 10:22:13,929 [restartedMain] DEBUG    - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@64868758
+2022-06-15 10:22:13,929 [restartedMain] DEBUG    - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@64868758
+2022-06-15 10:22:13,930 [restartedMain] DEBUG    - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@33ebd47f
+2022-06-15 10:22:13,931 [restartedMain] DEBUG    - Adding type registration calendar -> org.hibernate.type.CalendarType@3bf163bd
+2022-06-15 10:22:13,931 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@601869d6
+2022-06-15 10:22:13,931 [restartedMain] DEBUG    - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3bf163bd
+2022-06-15 10:22:13,932 [restartedMain] DEBUG    - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3bf163bd
+2022-06-15 10:22:13,932 [restartedMain] DEBUG    - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@23a96e1c
+2022-06-15 10:22:13,933 [restartedMain] DEBUG    - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@40e7751c
+2022-06-15 10:22:13,936 [restartedMain] DEBUG    - Adding type registration locale -> org.hibernate.type.LocaleType@306c3c82
+2022-06-15 10:22:13,936 [restartedMain] DEBUG    - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@306c3c82
+2022-06-15 10:22:13,937 [restartedMain] DEBUG    - Adding type registration currency -> org.hibernate.type.CurrencyType@5913cc18
+2022-06-15 10:22:13,937 [restartedMain] DEBUG    - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5913cc18
+2022-06-15 10:22:13,938 [restartedMain] DEBUG    - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6633f9e2
+2022-06-15 10:22:13,938 [restartedMain] DEBUG    - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6633f9e2
+2022-06-15 10:22:13,939 [restartedMain] DEBUG    - Adding type registration class -> org.hibernate.type.ClassType@dfa3f63
+2022-06-15 10:22:13,939 [restartedMain] DEBUG    - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@dfa3f63
+2022-06-15 10:22:13,940 [restartedMain] DEBUG    - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@34860fe2
+2022-06-15 10:22:13,940 [restartedMain] DEBUG    - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@34860fe2
+2022-06-15 10:22:13,941 [restartedMain] DEBUG    - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@608edf83
+2022-06-15 10:22:13,942 [restartedMain] DEBUG    - Adding type registration binary -> org.hibernate.type.BinaryType@1b05c70f
+2022-06-15 10:22:13,942 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.BinaryType@1b05c70f
+2022-06-15 10:22:13,942 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.BinaryType@1b05c70f
+2022-06-15 10:22:13,943 [restartedMain] DEBUG    - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6290d5fa
+2022-06-15 10:22:13,943 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6290d5fa
+2022-06-15 10:22:13,943 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6290d5fa
+2022-06-15 10:22:13,945 [restartedMain] DEBUG    - Adding type registration row_version -> org.hibernate.type.RowVersionType@639b3719
+2022-06-15 10:22:13,946 [restartedMain] DEBUG    - Adding type registration image -> org.hibernate.type.ImageType@540a6509
+2022-06-15 10:22:13,947 [restartedMain] DEBUG    - Adding type registration characters -> org.hibernate.type.CharArrayType@71d2e73b
+2022-06-15 10:22:13,947 [restartedMain] DEBUG    - Adding type registration char[] -> org.hibernate.type.CharArrayType@71d2e73b
+2022-06-15 10:22:13,947 [restartedMain] DEBUG    - Adding type registration [C -> org.hibernate.type.CharArrayType@71d2e73b
+2022-06-15 10:22:13,948 [restartedMain] DEBUG    - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@79605b9c
+2022-06-15 10:22:13,949 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@79605b9c
+2022-06-15 10:22:13,949 [restartedMain] DEBUG    - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@79605b9c
+2022-06-15 10:22:13,949 [restartedMain] DEBUG    - Adding type registration text -> org.hibernate.type.TextType@44d6ca8e
+2022-06-15 10:22:13,949 [restartedMain] DEBUG    - Adding type registration ntext -> org.hibernate.type.NTextType@5807cbe3
+2022-06-15 10:22:13,950 [restartedMain] DEBUG    - Adding type registration blob -> org.hibernate.type.BlobType@2edddbde
+2022-06-15 10:22:13,950 [restartedMain] DEBUG    - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2edddbde
+2022-06-15 10:22:13,951 [restartedMain] DEBUG    - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@f7aefbb
+2022-06-15 10:22:13,952 [restartedMain] DEBUG    - Adding type registration clob -> org.hibernate.type.ClobType@6e1b3af7
+2022-06-15 10:22:13,952 [restartedMain] DEBUG    - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6e1b3af7
+2022-06-15 10:22:13,953 [restartedMain] DEBUG    - Adding type registration nclob -> org.hibernate.type.NClobType@7101580
+2022-06-15 10:22:13,954 [restartedMain] DEBUG    - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7101580
+2022-06-15 10:22:13,954 [restartedMain] DEBUG    - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2dfbcfd6
+2022-06-15 10:22:13,954 [restartedMain] DEBUG    - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4a07682d
+2022-06-15 10:22:13,956 [restartedMain] DEBUG    - Adding type registration serializable -> org.hibernate.type.SerializableType@6ea6b04c
+2022-06-15 10:22:13,960 [restartedMain] DEBUG    - Adding type registration object -> org.hibernate.type.ObjectType@e815412
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@e815412
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@512f4fd1
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3d69ffa8
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5e43b19e
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5ecc35f0
+2022-06-15 10:22:13,961 [restartedMain] DEBUG    - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7536b83f
+2022-06-15 10:22:13,962 [restartedMain] DEBUG    - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7509d8e
+2022-06-15 10:22:13,962 [restartedMain] DEBUG    - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@445c03bb
+2022-06-15 10:22:13,962 [restartedMain] DEBUG    - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7b80dd75
+2022-06-15 10:22:13,972 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@15d7b451] into BootstrapContext; was [null]
+2022-06-15 10:22:13,972 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@15d7b451) [was null]
+2022-06-15 10:22:13,973 [restartedMain] DEBUG    - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@31bb5fa9] into BootstrapContext; was [null]
+2022-06-15 10:22:13,973 [restartedMain] DEBUG    - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@3aa525e5] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@16616b0c]
+2022-06-15 10:22:13,989 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@15d7b451]
+2022-06-15 10:22:13,989 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@15d7b451]
+2022-06-15 10:22:13,999 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-06-15 10:22:13,999 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-06-15 10:22:14,000 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:22:14,000 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:22:14,000 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-06-15 10:22:14,001 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-06-15 10:22:14,002 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-06-15 10:22:14,003 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:22:14,004 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-06-15 10:22:14,005 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-06-15 10:22:14,006 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-06-15 10:22:14,006 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-06-15 10:22:14,007 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:22:14,009 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-06-15 10:22:14,021 [restartedMain] DEBUG    - Database ->
+       name : Oracle
+    version : Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+      major : 19
+      minor : 0
+2022-06-15 10:22:14,021 [restartedMain] DEBUG    - Driver ->
+       name : Oracle JDBC driver
+    version : 21.3.0.0.0
+      major : 21
+      minor : 3
+2022-06-15 10:22:14,021 [restartedMain] DEBUG    - JDBC version : 4.2
+2022-06-15 10:22:14,041 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7b1c01f8
+2022-06-15 10:22:14,045 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 10:22:14,145 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@73954a3
+2022-06-15 10:22:14,199 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.MaterializedBlobType@f7aefbb
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@1b05c70f
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.MaterializedBlobType@f7aefbb
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@1b05c70f
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrappedMaterializedBlobType@66453b1c
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6290d5fa
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrappedMaterializedBlobType@66453b1c
+2022-06-15 10:22:14,200 [restartedMain] DEBUG    - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6290d5fa
+2022-06-15 10:22:14,202 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53b6877b] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@14010e8b]
+2022-06-15 10:22:14,240 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@a288fad
+2022-06-15 10:22:14,243 [restartedMain] DEBUG    - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-06-15 10:22:14,259 [restartedMain] DEBUG    - Binding entity from annotated class: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:14,277 [restartedMain] DEBUG    - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-06-15 10:22:14,284 [restartedMain] DEBUG    - Import with entity name Batch_Job_Status
+2022-06-15 10:22:14,287 [restartedMain] DEBUG    - Bind entity batchEmail.dbTable.Batch_Job_Status on table batch_job_status
+2022-06-15 10:22:14,318 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,322 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 10:22:14,322 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:14,323 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_NAME with lazy=false
+2022-06-15 10:22:14,326 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_NAME]
+2022-06-15 10:22:14,330 [restartedMain] DEBUG    - building SimpleValue for BATCH_NAME
+2022-06-15 10:22:14,333 [restartedMain] DEBUG    - Building property BATCH_NAME
+2022-06-15 10:22:14,336 [restartedMain] DEBUG    - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(batch_name)]), BATCH_NAME, assigned, , ...)
+2022-06-15 10:22:14,337 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_category, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,337 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_CATEGORY with lazy=false
+2022-06-15 10:22:14,337 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_CATEGORY]
+2022-06-15 10:22:14,337 [restartedMain] DEBUG    - building SimpleValue for BATCH_CATEGORY
+2022-06-15 10:22:14,337 [restartedMain] DEBUG    - Building property BATCH_CATEGORY
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_status, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_STATUS with lazy=false
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_STATUS]
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - building SimpleValue for BATCH_STATUS
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - Building property BATCH_STATUS
+2022-06-15 10:22:14,338 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=end_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,339 [restartedMain] DEBUG    - MetadataSourceProcessor property END_TM with lazy=false
+2022-06-15 10:22:14,339 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:END_TM]
+2022-06-15 10:22:14,339 [restartedMain] DEBUG    - building SimpleValue for END_TM
+2022-06-15 10:22:14,339 [restartedMain] DEBUG    - Building property END_TM
+2022-06-15 10:22:14,339 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=max_date, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,340 [restartedMain] DEBUG    - MetadataSourceProcessor property MAX_DATE with lazy=false
+2022-06-15 10:22:14,340 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:MAX_DATE]
+2022-06-15 10:22:14,340 [restartedMain] DEBUG    - building SimpleValue for MAX_DATE
+2022-06-15 10:22:14,340 [restartedMain] DEBUG    - Building property MAX_DATE
+2022-06-15 10:22:14,341 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_content, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,341 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_CONTENT with lazy=false
+2022-06-15 10:22:14,342 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_CONTENT]
+2022-06-15 10:22:14,342 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:22:14,342 [restartedMain] DEBUG    - Building property SEND_MAIL_CONTENT
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_flag, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_FLAG with lazy=false
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_FLAG]
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - Building property SEND_MAIL_FLAG
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_object, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_OBJECT with lazy=false
+2022-06-15 10:22:14,343 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_OBJECT]
+2022-06-15 10:22:14,344 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:22:14,344 [restartedMain] DEBUG    - Building property SEND_MAIL_OBJECT
+2022-06-15 10:22:14,345 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_subject, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,346 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_SUBJECT with lazy=false
+2022-06-15 10:22:14,347 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_SUBJECT]
+2022-06-15 10:22:14,347 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:22:14,347 [restartedMain] DEBUG    - Building property SEND_MAIL_SUBJECT
+2022-06-15 10:22:14,347 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,349 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_COUNT with lazy=false
+2022-06-15 10:22:14,349 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_COUNT]
+2022-06-15 10:22:14,349 [restartedMain] DEBUG    - building SimpleValue for SOURCE_COUNT
+2022-06-15 10:22:14,349 [restartedMain] DEBUG    - Building property SOURCE_COUNT
+2022-06-15 10:22:14,349 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_file_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_FILE_NAME with lazy=false
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_FILE_NAME]
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - building SimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - Building property SOURCE_FILE_NAME
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=start_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - MetadataSourceProcessor property START_TM with lazy=false
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:START_TM]
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - building SimpleValue for START_TM
+2022-06-15 10:22:14,350 [restartedMain] DEBUG    - Building property START_TM
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=target_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - MetadataSourceProcessor property TARGET_COUNT with lazy=false
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:TARGET_COUNT]
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - building SimpleValue for TARGET_COUNT
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - Building property TARGET_COUNT
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=update_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - MetadataSourceProcessor property UPDATE_TM with lazy=false
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:UPDATE_TM]
+2022-06-15 10:22:14,351 [restartedMain] DEBUG    - building SimpleValue for UPDATE_TM
+2022-06-15 10:22:14,352 [restartedMain] DEBUG    - Building property UPDATE_TM
+2022-06-15 10:22:14,353 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@577ffcba
+2022-06-15 10:22:14,359 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_NAME
+2022-06-15 10:22:14,359 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_CATEGORY
+2022-06-15 10:22:14,359 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_STATUS
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for END_TM
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for MAX_DATE
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_COUNT
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:22:14,360 [restartedMain] DEBUG    - Starting fillSimpleValue for START_TM
+2022-06-15 10:22:14,361 [restartedMain] DEBUG    - Starting fillSimpleValue for TARGET_COUNT
+2022-06-15 10:22:14,361 [restartedMain] DEBUG    - Starting fillSimpleValue for UPDATE_TM
+2022-06-15 10:22:14,362 [restartedMain] DEBUG    - Forcing column [batch_name] to be non-null as it is part of the primary key for table [batch_job_status]
+2022-06-15 10:22:14,398 [restartedMain] DEBUG    - Building session factory
+2022-06-15 10:22:14,399 [restartedMain] DEBUG    - SessionFactory name : null
+2022-06-15 10:22:14,399 [restartedMain] DEBUG    - Automatic flush during beforeCompletion(): enabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Automatic session close at end of transaction: disabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Statistics: disabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Deleted entity synthetic identifier rollback: disabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Default entity-mode: pojo
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Allow initialization of lazy state outside session : disabled
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Using BatchFetchStyle : LEGACY
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Default batch fetch size: -1
+2022-06-15 10:22:14,400 [restartedMain] DEBUG    - Maximum outer join fetch depth: null
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Default null ordering: NONE
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Order SQL updates by primary key: disabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Order SQL inserts for batching: disabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - multi-tenancy strategy : NONE
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - JTA Track by Thread: enabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Query language substitutions: {}
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Named query checking : enabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Second-level cache: disabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Second-level query cache: disabled
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Second-level query cache factory: null
+2022-06-15 10:22:14,401 [restartedMain] DEBUG    - Second-level cache region prefix: null
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Optimize second-level cache for minimal puts: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Structured second-level cache entries: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Second-level cache direct-reference entries: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Automatic eviction of collection cache: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JDBC batch size: 15
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JDBC batch updates for versioned data: enabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Scrollable result sets: enabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Wrap result sets: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JDBC3 getGeneratedKeys(): enabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JDBC result set fetch size: null
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Connection release mode: ON_CLOSE
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - Generate SQL with comments: disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JPA compliance - query : disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JPA compliance - closed-handling : disabled
+2022-06-15 10:22:14,402 [restartedMain] DEBUG    - JPA compliance - lists : disabled
+2022-06-15 10:22:14,403 [restartedMain] DEBUG    - JPA compliance - transactions : disabled
+2022-06-15 10:22:14,444 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:14,444 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:14,456 [restartedMain] DEBUG    - Session factory constructed with filter configurations : {}
+2022-06-15 10:22:14,456 [restartedMain] DEBUG    - Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=17, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7d1b24b0, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=MS950, hibernate.dialect=org.hibernate.dialect.Oracle12cDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.6.4\spring-boot-starter-data-jpa-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.6.4\spring-boot-starter-aop-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aop\5.3.16\spring-aop-5.3.16.jar;C:\Users\user01\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.6.4\spring-boot-starter-jdbc-2.6.4.jar;C:\Users\user01\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jdbc\5.3.16\spring-jdbc-5.3.16.jar;C:\Users\user01\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\user01\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\user01\.m2\repository\org\hibernate\hibernate-core\5.6.5.Final\hibernate-core-5.6.5.Final.jar;C:\Users\user01\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\user01\.m2\repository\net\bytebuddy\byte-buddy\1.11.22\byte-buddy-1.11.22.jar;C:\Users\user01\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\user01\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\user01\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\user01\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.6\jaxb-runtime-2.3.6.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\txw2\2.3.6\txw2-2.3.6.jar;C:\Users\user01\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-jpa\2.6.2\spring-data-jpa-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-commons\2.6.2\spring-data-commons-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-orm\5.3.16\spring-orm-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context\5.3.16\spring-context-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-expression\5.3.16\spring-expression-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-tx\5.3.16\spring-tx-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-beans\5.3.16\spring-beans-5.3.16.jar;C:\Users\user01\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aspects\5.3.16\spring-aspects-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-mail\2.6.4\spring-boot-starter-mail-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter\2.6.4\spring-boot-starter-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.6.4\spring-boot-starter-logging-2.6.4.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-classic\1.2.10\logback-classic-1.2.10.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-core\1.2.10\logback-core-1.2.10.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.1\log4j-to-slf4j-2.17.1.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\user01\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\user01\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\user01\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context-support\5.3.16\spring-context-support-5.3.16.jar;C:\Users\user01\.m2\repository\com\sun\mail\jakarta.mail\1.6.7\jakarta.mail-1.6.7.jar;C:\Users\user01\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-devtools\2.6.4\spring-boot-devtools-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot\2.6.4\spring-boot-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.4\spring-boot-autoconfigure-2.6.4.jar;C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar;C:\Users\user01\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\user01\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\user01\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-core\5.3.16\spring-core-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jcl\5.3.16\spring-jcl-5.3.16.jar, com.sun.management.jmxremote.authenticate=false, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=Asia/Taipei, jakarta.persistence.sharedCache.mode=UNSPECIFIED, java.vm.specification.version=17, os.name=Windows 10, javax.persistence.validation.mode=AUTO, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), sun.java.launcher=SUN_STANDARD, user.country=TW, sun.boot.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=batchEmail.BatchEmailApplication test, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@4f3fd3a2, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, spring.boot.project.name=BatchEmail, user.home=C:\Users\user01, user.language=zh, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.2+8, user.name=user01, spring.jmx.enabled=true, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Temurin-17.0.2+8, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\user01\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, com.sun.management.jmxremote.port=49624, java.version=17.0.2, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\workfile\CUB_etl\JavaEE\BatchEmail, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=18180, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@5f088b59, native.encoding=MS950, java.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Java\jre1.8.0_202\bin;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Program Files\SASHome\Secure\ccme4;C:\Users\user01\AppData\Local\Microsoft\WindowsApps;C:\Users\user01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user01\AppData\Roaming\npm;C:\ProgramData\user01\GitHubDesktop\bin;C:\Users\user01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Azure Data Studio\bin;C:\WINDOWS\system32;;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, emulated-client, java.vm.version=17.0.2+8, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, java.rmi.server.hostname=localhost, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), CONSOLE_LOG_PATTERN=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n, java.class.version=61.0}
+2022-06-15 10:22:14,457 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@51cf93da
+2022-06-15 10:22:14,473 [restartedMain] DEBUG    - Skipping JACC integration as it was not enabled
+2022-06-15 10:22:14,474 [restartedMain] DEBUG    - Instantiated session factory
+2022-06-15 10:22:14,474 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53b6877b] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4660118c]
+2022-06-15 10:22:14,531 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 10:22:14,532 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:14,570 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@420f8459
+2022-06-15 10:22:14,570 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:22:14,735 [restartedMain] DEBUG    - Static SQL for entity: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:14,735 [restartedMain] DEBUG    -  Version select: select batch_name from batch_job_status where batch_name =?
+2022-06-15 10:22:14,735 [restartedMain] DEBUG    -  Snapshot select: select batch_job__.batch_name, batch_job__.batch_category as batch_category2_0_, batch_job__.batch_status as batch_status3_0_, batch_job__.end_tm as end_tm4_0_, batch_job__.max_date as max_date5_0_, batch_job__.send_mail_content as send_mail_content6_0_, batch_job__.send_mail_flag as send_mail_flag7_0_, batch_job__.send_mail_object as send_mail_object8_0_, batch_job__.send_mail_subject as send_mail_subject9_0_, batch_job__.source_count as source_count10_0_, batch_job__.source_file_name as source_file_name11_0_, batch_job__.start_tm as start_tm12_0_, batch_job__.target_count as target_count13_0_, batch_job__.update_tm as update_tm14_0_ from batch_job_status batch_job__ where batch_job__.batch_name=?
+2022-06-15 10:22:14,735 [restartedMain] DEBUG    -  Insert 0: insert into batch_job_status (batch_category, batch_status, end_tm, max_date, send_mail_content, send_mail_flag, send_mail_object, send_mail_subject, source_count, source_file_name, start_tm, target_count, update_tm, batch_name) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-06-15 10:22:14,735 [restartedMain] DEBUG    -  Update 0: update batch_job_status set batch_category=?, batch_status=?, end_tm=?, max_date=?, send_mail_content=?, send_mail_flag=?, send_mail_object=?, send_mail_subject=?, source_count=?, source_file_name=?, start_tm=?, target_count=?, update_tm=? where batch_name=?
+2022-06-15 10:22:14,736 [restartedMain] DEBUG    -  Delete 0: delete from batch_job_status where batch_name=?
+2022-06-15 10:22:14,768 [restartedMain] DEBUG    - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bbc0052]
+2022-06-15 10:22:14,769 [restartedMain] DEBUG    - Visiting attribute path : BATCH_CATEGORY
+2022-06-15 10:22:14,769 [restartedMain] DEBUG    - Visiting attribute path : BATCH_STATUS
+2022-06-15 10:22:14,769 [restartedMain] DEBUG    - Visiting attribute path : END_TM
+2022-06-15 10:22:14,769 [restartedMain] DEBUG    - Visiting attribute path : MAX_DATE
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_CONTENT
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_FLAG
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_OBJECT
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_SUBJECT
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_COUNT
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_FILE_NAME
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : START_TM
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : TARGET_COUNT
+2022-06-15 10:22:14,770 [restartedMain] DEBUG    - Visiting attribute path : UPDATE_TM
+2022-06-15 10:22:14,771 [restartedMain] DEBUG    - Building LoadPlan...
+2022-06-15 10:22:14,780 [restartedMain] DEBUG    - processing queryspace <gen:0>
+2022-06-15 10:22:14,783 [restartedMain] DEBUG    - LoadPlan(entity=batchEmail.dbTable.Batch_Job_Status)
+    - Returns
+       - EntityReturnImpl(entity=batchEmail.dbTable.Batch_Job_Status, querySpaceUid=<gen:0>, path=batchEmail.dbTable.Batch_Job_Status)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=batchEmail.dbTable.Batch_Job_Status)
+          - SQL table alias mapping - batch_job_0_
+          - alias suffix - 0_
+          - suffixed key columns - {batch_name1_0_0_}
+
+2022-06-15 10:22:14,785 [restartedMain] DEBUG    - Static select for entity batchEmail.dbTable.Batch_Job_Status [NONE]: select batch_job_0_.batch_name as batch_name1_0_0_, batch_job_0_.batch_category as batch_category2_0_0_, batch_job_0_.batch_status as batch_status3_0_0_, batch_job_0_.end_tm as end_tm4_0_0_, batch_job_0_.max_date as max_date5_0_0_, batch_job_0_.send_mail_content as send_mail_content6_0_0_, batch_job_0_.send_mail_flag as send_mail_flag7_0_0_, batch_job_0_.send_mail_object as send_mail_object8_0_0_, batch_job_0_.send_mail_subject as send_mail_subject9_0_0_, batch_job_0_.source_count as source_count10_0_0_, batch_job_0_.source_file_name as source_file_name11_0_0_, batch_job_0_.start_tm as start_tm12_0_0_, batch_job_0_.target_count as target_count13_0_0_, batch_job_0_.update_tm as update_tm14_0_0_ from batch_job_status batch_job_0_ where batch_job_0_.batch_name=?
+2022-06-15 10:22:14,808 [restartedMain] DEBUG    - No actions specified; doing nothing
+2022-06-15 10:22:14,808 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 10:22:14,809 [restartedMain] DEBUG    - Checking 0 named HQL queries
+2022-06-15 10:22:14,809 [restartedMain] DEBUG    - Checking 0 named SQL queries
+2022-06-15 10:22:14,812 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:14,817 [restartedMain] DEBUG    - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@24806064
+2022-06-15 10:22:14,817 [restartedMain] DEBUG    - Registering SessionFactory: 7abb1882-61af-43fe-b6d7-a33238bfef16 (<unnamed>)
+2022-06-15 10:22:14,817 [restartedMain] DEBUG    - Not binding SessionFactory to JNDI, no JNDI name configured
+2022-06-15 10:22:14,972 [restartedMain] DEBUG    - Statistics initialized [enabled=false]
+2022-06-15 10:22:15,107 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,117 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,119 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,141 [restartedMain] DEBUG    - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@4d6f3b8f
+2022-06-15 10:22:15,165 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SOURCE_COUNT = ?1 where BATCH_NAME = ?2
+2022-06-15 10:22:15,169 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,176 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SOURCE_COUNT'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 10:22:15,193 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:22:15,204 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:22:15,212 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,214 [restartedMain] DEBUG    - getDataType() : SOURCE_COUNT -> org.hibernate.type.IntegerType@69c198dd
+2022-06-15 10:22:15,215 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SOURCE_COUNT -> source_count
+2022-06-15 10:22:15,216 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,216 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,217 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:22:15,217 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:22:15,217 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:22:15,218 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'source_count' {propertyName=SOURCE_COUNT,dereferenceType=PRIMITIVE,getPropertyPath=SOURCE_COUNT,path={synthetic-alias}.SOURCE_COUNT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SOURCE_COUNT' {originalText=SOURCE_COUNT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.IntegerType@69c198dd}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@6bacf611}
+
+2022-06-15 10:22:15,218 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,222 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,227 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,228 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set UPDATE_TM = CURRENT_TIMESTAMP where BATCH_NAME = ?1
+2022-06-15 10:22:15,228 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,229 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'UPDATE_TM'
+    |     \-[IDENT] Node: 'CURRENT_TIMESTAMP'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '1'
+
+2022-06-15 10:22:15,229 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:22:15,229 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:22:15,229 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,229 [restartedMain] DEBUG    - getDataType() : UPDATE_TM -> org.hibernate.type.TimestampType@64868758
+2022-06-15 10:22:15,230 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.UPDATE_TM -> update_tm
+2022-06-15 10:22:15,231 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,231 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,231 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:22:15,231 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:22:15,231 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:22:15,232 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'update_tm' {propertyName=UPDATE_TM,dereferenceType=PRIMITIVE,getPropertyPath=UPDATE_TM,path={synthetic-alias}.UPDATE_TM,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'UPDATE_TM' {originalText=UPDATE_TM}
+    |     \-[IDENT] IdentNode: 'CURRENT_TIMESTAMP' {originalText=CURRENT_TIMESTAMP}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@6bacf611}
+
+2022-06-15 10:22:15,232 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,232 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,233 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,234 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SEND_MAIL_FLAG = ?1 where BATCH_NAME = ?2
+2022-06-15 10:22:15,235 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,235 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SEND_MAIL_FLAG'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 10:22:15,235 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:22:15,236 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:22:15,236 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,236 [restartedMain] DEBUG    - getDataType() : SEND_MAIL_FLAG -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,236 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SEND_MAIL_FLAG -> send_mail_flag
+2022-06-15 10:22:15,237 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,237 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,237 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:22:15,237 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:22:15,237 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:22:15,238 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'send_mail_flag' {propertyName=SEND_MAIL_FLAG,dereferenceType=PRIMITIVE,getPropertyPath=SEND_MAIL_FLAG,path={synthetic-alias}.SEND_MAIL_FLAG,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SEND_MAIL_FLAG' {originalText=SEND_MAIL_FLAG}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@6bacf611}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@6bacf611}
+
+2022-06-15 10:22:15,238 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,238 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,239 [restartedMain] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:22:15,241 [restartedMain] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SEND_MAIL_OBJECT = ?1 where BATCH_NAME = ?2
+2022-06-15 10:22:15,242 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,243 [restartedMain] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SEND_MAIL_OBJECT'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 10:22:15,243 [restartedMain] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:22:15,243 [restartedMain] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:22:15,244 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,244 [restartedMain] DEBUG    - getDataType() : SEND_MAIL_OBJECT -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,244 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.SEND_MAIL_OBJECT -> send_mail_object
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@6bacf611
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'send_mail_object' {propertyName=SEND_MAIL_OBJECT,dereferenceType=PRIMITIVE,getPropertyPath=SEND_MAIL_OBJECT,path={synthetic-alias}.SEND_MAIL_OBJECT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SEND_MAIL_OBJECT' {originalText=SEND_MAIL_OBJECT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.StringType@6bacf611}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@6bacf611}
+
+2022-06-15 10:22:15,245 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,246 [restartedMain] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:22:15,360 [restartedMain] INFO    - Started BatchEmailApplication in 3.622 seconds (JVM running for 4.753)
+2022-06-15 10:22:15,362 [restartedMain] INFO    - Try to send test email.
+2022-06-15 10:22:36,463 [restartedMain] DEBUG    - HHH000031: Closing
+2022-06-15 10:22:36,464 [restartedMain] DEBUG    - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2934418b] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4660118c]
+2022-06-15 10:22:36,466 [restartedMain] DEBUG    - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-06-15 10:22:36,467 [restartedMain] DEBUG    - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-06-15 10:22:36,469 [restartedMain] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 10:22:36,469 [restartedMain] DEBUG    - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:22:36,471 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4c08fb4b: (connection evicted)
+2022-06-15 10:22:36,476 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@642d0868: (connection evicted)
+2022-06-15 10:22:36,483 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@181df567: (connection evicted)
+2022-06-15 10:22:36,494 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@601869d6: (connection evicted)
+2022-06-15 10:22:36,497 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7b1c01f8: (connection evicted)
+2022-06-15 10:22:36,508 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@73954a3: (connection evicted)
+2022-06-15 10:22:36,515 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@a288fad: (connection evicted)
+2022-06-15 10:22:36,520 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@577ffcba: (connection evicted)
+2022-06-15 10:22:36,524 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@51cf93da: (connection evicted)
+2022-06-15 10:22:36,529 [HikariPool-1 connection closer] DEBUG    - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@420f8459: (connection evicted)
+2022-06-15 10:22:36,534 [restartedMain] DEBUG    - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-06-15 10:22:36,534 [restartedMain] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 10:22:52,020 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 23196 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 10:22:52,022 [restartedMain] DEBUG    - Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-06-15 10:22:52,022 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"

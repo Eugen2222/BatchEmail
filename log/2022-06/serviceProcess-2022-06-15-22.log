@@ -1,0 +1,56 @@
+2022-06-15 10:59:01,586 [main] DEBUG    - Not binding SessionFactory to JNDI, no JNDI name configured
+2022-06-15 10:59:01,932 [main] DEBUG    - Statistics initialized [enabled=false]
+2022-06-15 10:59:02,200 [main] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:59:02,216 [main] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:59:02,222 [main] DEBUG    - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-06-15 10:59:02,253 [main] DEBUG    - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@31a024ea
+2022-06-15 10:59:02,290 [main] DEBUG    - parse() - HQL: update batchEmail.dbTable.Batch_Job_Status set SOURCE_COUNT = ?1 where BATCH_NAME = ?2
+2022-06-15 10:59:02,296 [main] DEBUG    - throwQueryException() : no errors
+2022-06-15 10:59:02,306 [main] DEBUG    - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[IDENT] Node: 'batchEmail'
+    |        |  \-[IDENT] Node: 'dbTable'
+    |        \-[IDENT] Node: 'Batch_Job_Status'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'SOURCE_COUNT'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'BATCH_NAME'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+2022-06-15 10:59:02,351 [main] DEBUG    - update << begin [level=1, statement=update]
+2022-06-15 10:59:02,374 [main] DEBUG    - FromClause{level=1} : batchEmail.dbTable.Batch_Job_Status (<no alias>) -> batch_job_0_
+2022-06-15 10:59:02,377 [main] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:59:02,379 [main] DEBUG    - getDataType() : SOURCE_COUNT -> org.hibernate.type.IntegerType@150fc7a7
+2022-06-15 10:59:02,381 [main] DEBUG    - Resolved : {synthetic-alias}.SOURCE_COUNT -> source_count
+2022-06-15 10:59:02,384 [main] DEBUG    - Resolved : {synthetic-alias} -> {synthetic-alias}
+2022-06-15 10:59:02,385 [main] DEBUG    - getDataType() : BATCH_NAME -> org.hibernate.type.StringType@cf01c2e
+2022-06-15 10:59:02,385 [main] DEBUG    - Resolved : {synthetic-alias}.BATCH_NAME -> batch_name
+2022-06-15 10:59:02,385 [main] DEBUG    - update : finishing up [level=1, statement=update]
+2022-06-15 10:59:02,385 [main] DEBUG    - update >> end [level=1, statement=update]
+2022-06-15 10:59:02,387 [main] DEBUG    - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (batch_job_status)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[batch_job_0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'batch_job_status' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=batch_job_status,tableAlias=batch_job_0_,origin=null,columns={,className=batchEmail.dbTable.Batch_Job_Status}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'source_count' {propertyName=SOURCE_COUNT,dereferenceType=PRIMITIVE,getPropertyPath=SOURCE_COUNT,path={synthetic-alias}.SOURCE_COUNT,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'SOURCE_COUNT' {originalText=SOURCE_COUNT}
+    |     \-[PARAM] ParameterNode: '?' {label=1, expectedType=org.hibernate.type.IntegerType@150fc7a7}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'batch_name' {propertyName=BATCH_NAME,dereferenceType=PRIMITIVE,getPropertyPath=BATCH_NAME,path={synthetic-alias}.BATCH_NAME,tableAlias=batch_job_0_,className=batchEmail.dbTable.Batch_Job_Status,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'BATCH_NAME' {originalText=BATCH_NAME}
+          \-[PARAM] ParameterNode: '?' {label=2, expectedType=org.hibernate.type.StringType@cf01c2e}
+
+2022-06-15 10:59:02,387 [main] DEBUG    - throwQueryException() : no errors

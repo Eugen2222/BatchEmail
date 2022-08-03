@@ -1,0 +1,94 @@
+2022-06-15 10:58:59,547 [main] DEBUG    - Adding type registration locale -> org.hibernate.type.LocaleType@3030836d
+2022-06-15 10:58:59,552 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@524f019a
+2022-06-15 10:58:59,557 [main] DEBUG    - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3030836d
+2022-06-15 10:58:59,562 [main] DEBUG    - Adding type registration currency -> org.hibernate.type.CurrencyType@68aec50
+2022-06-15 10:58:59,563 [main] DEBUG    - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@68aec50
+2022-06-15 10:58:59,566 [main] DEBUG    - Adding type registration timezone -> org.hibernate.type.TimeZoneType@e0d1dc4
+2022-06-15 10:58:59,567 [main] DEBUG    - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@e0d1dc4
+2022-06-15 10:58:59,572 [main] DEBUG    - Adding type registration class -> org.hibernate.type.ClassType@74fb5b59
+2022-06-15 10:58:59,573 [main] DEBUG    - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@74fb5b59
+2022-06-15 10:58:59,577 [main] DEBUG    - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1e92c3b6
+2022-06-15 10:58:59,578 [main] DEBUG    - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1e92c3b6
+2022-06-15 10:58:59,581 [main] DEBUG    - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@23ad2d17
+2022-06-15 10:58:59,585 [main] DEBUG    - Adding type registration binary -> org.hibernate.type.BinaryType@18cf5c52
+2022-06-15 10:58:59,586 [main] DEBUG    - Adding type registration byte[] -> org.hibernate.type.BinaryType@18cf5c52
+2022-06-15 10:58:59,587 [main] DEBUG    - Adding type registration [B -> org.hibernate.type.BinaryType@18cf5c52
+2022-06-15 10:58:59,589 [main] DEBUG    - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6f96dd64
+2022-06-15 10:58:59,590 [main] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6f96dd64
+2022-06-15 10:58:59,590 [main] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6f96dd64
+2022-06-15 10:58:59,596 [main] DEBUG    - Adding type registration row_version -> org.hibernate.type.RowVersionType@63917fe1
+2022-06-15 10:58:59,598 [main] DEBUG    - Adding type registration image -> org.hibernate.type.ImageType@2c60ce47
+2022-06-15 10:58:59,602 [main] DEBUG    - Adding type registration characters -> org.hibernate.type.CharArrayType@2776fd8f
+2022-06-15 10:58:59,603 [main] DEBUG    - Adding type registration char[] -> org.hibernate.type.CharArrayType@2776fd8f
+2022-06-15 10:58:59,603 [main] DEBUG    - Adding type registration [C -> org.hibernate.type.CharArrayType@2776fd8f
+2022-06-15 10:58:59,605 [main] DEBUG    - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4a1dda83
+2022-06-15 10:58:59,607 [main] DEBUG    - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4a1dda83
+2022-06-15 10:58:59,607 [main] DEBUG    - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4a1dda83
+2022-06-15 10:58:59,609 [main] DEBUG    - Adding type registration text -> org.hibernate.type.TextType@52621501
+2022-06-15 10:58:59,611 [main] DEBUG    - Adding type registration ntext -> org.hibernate.type.NTextType@5ac044ef
+2022-06-15 10:58:59,618 [main] DEBUG    - Adding type registration blob -> org.hibernate.type.BlobType@716f94c1
+2022-06-15 10:58:59,619 [main] DEBUG    - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@716f94c1
+2022-06-15 10:58:59,620 [main] DEBUG    - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1d99ee1b
+2022-06-15 10:58:59,625 [main] DEBUG    - Adding type registration clob -> org.hibernate.type.ClobType@6c8efde4
+2022-06-15 10:58:59,625 [main] DEBUG    - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6c8efde4
+2022-06-15 10:58:59,631 [main] DEBUG    - Adding type registration nclob -> org.hibernate.type.NClobType@2b441e56
+2022-06-15 10:58:59,631 [main] DEBUG    - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2b441e56
+2022-06-15 10:58:59,632 [main] DEBUG    - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1a2773a8
+2022-06-15 10:58:59,633 [main] DEBUG    - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@25699aa7
+2022-06-15 10:58:59,635 [main] DEBUG    - Adding type registration serializable -> org.hibernate.type.SerializableType@2e4eda17
+2022-06-15 10:58:59,641 [main] DEBUG    - Adding type registration object -> org.hibernate.type.ObjectType@37b01ce2
+2022-06-15 10:58:59,641 [main] DEBUG    - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@37b01ce2
+2022-06-15 10:58:59,642 [main] DEBUG    - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@26a4f9ed
+2022-06-15 10:58:59,643 [main] DEBUG    - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7a572ea0
+2022-06-15 10:58:59,643 [main] DEBUG    - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@45287377
+2022-06-15 10:58:59,643 [main] DEBUG    - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7159d601
+2022-06-15 10:58:59,644 [main] DEBUG    - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@70b33256
+2022-06-15 10:58:59,644 [main] DEBUG    - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@33d230ce
+2022-06-15 10:58:59,645 [main] DEBUG    - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@35e74e08
+2022-06-15 10:58:59,645 [main] DEBUG    - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@a316f6b
+2022-06-15 10:58:59,658 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@174d5767
+2022-06-15 10:58:59,668 [main] DEBUG    - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7f12094d] into BootstrapContext; was [null]
+2022-06-15 10:58:59,669 [main] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7f12094d) [was null]
+2022-06-15 10:58:59,670 [main] DEBUG    - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@37d699a1] into BootstrapContext; was [null]
+2022-06-15 10:58:59,670 [main] DEBUG    - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7f42b194] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@8eb6f9a]
+2022-06-15 10:58:59,694 [main] DEBUG    - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7f12094d]
+2022-06-15 10:58:59,694 [main] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7f12094d]
+2022-06-15 10:58:59,713 [main] DEBUG    - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-06-15 10:58:59,714 [main] DEBUG    - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-06-15 10:58:59,715 [main] DEBUG    - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:58:59,716 [main] DEBUG    - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:58:59,717 [main] DEBUG    - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-06-15 10:58:59,719 [main] DEBUG    - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-06-15 10:58:59,720 [main] DEBUG    - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-06-15 10:58:59,721 [main] DEBUG    - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:58:59,723 [main] DEBUG    - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-06-15 10:58:59,724 [main] DEBUG    - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-06-15 10:58:59,725 [main] DEBUG    - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-06-15 10:58:59,734 [main] DEBUG    - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-06-15 10:58:59,734 [main] DEBUG    - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:58:59,741 [main] DEBUG    - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-06-15 10:58:59,756 [main] DEBUG    - Database ->
+       name : Oracle
+    version : Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+      major : 19
+      minor : 0
+2022-06-15 10:58:59,757 [main] DEBUG    - Driver ->
+       name : Oracle JDBC driver
+    version : 21.3.0.0.0
+      major : 21
+      minor : 3
+2022-06-15 10:58:59,758 [main] DEBUG    - JDBC version : 4.2
+2022-06-15 10:58:59,771 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@599ec205
+2022-06-15 10:58:59,772 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2022-06-15 10:58:59,799 [main] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 10:59:00,212 [main] DEBUG    - Adding type registration byte[] -> org.hibernate.type.MaterializedBlobType@1d99ee1b
+2022-06-15 10:59:00,213 [main] DEBUG    - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@18cf5c52
+2022-06-15 10:59:00,213 [main] DEBUG    - Adding type registration [B -> org.hibernate.type.MaterializedBlobType@1d99ee1b
+2022-06-15 10:59:00,213 [main] DEBUG    - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@18cf5c52
+2022-06-15 10:59:00,215 [main] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrappedMaterializedBlobType@205159dc
+2022-06-15 10:59:00,215 [main] DEBUG    - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@6f96dd64
+2022-06-15 10:59:00,215 [main] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrappedMaterializedBlobType@205159dc
+2022-06-15 10:59:00,216 [main] DEBUG    - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@6f96dd64
+2022-06-15 10:59:00,221 [main] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@55fb36de] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@63a7781]
+2022-06-15 10:59:00,329 [main] DEBUG    - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]

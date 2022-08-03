@@ -1,0 +1,11 @@
+2022-06-15 10:59:53,648 [main] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 10:59:53,800 [main] DEBUG    - select * from Batch_Job_Status where SEND_MAIL_FLAG in (?, ?)
+2022-06-15 11:00:14,943 [SpringApplicationShutdownHook] INFO    - HikariPool-1 - Shutdown initiated...
+2022-06-15 11:00:14,990 [SpringApplicationShutdownHook] INFO    - HikariPool-1 - Shutdown completed.
+2022-06-15 11:13:05,586 [restartedMain] INFO    - Starting BatchEmailApplication using Java 17.0.2 on X390 with PID 3244 (C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes started by user01 in C:\workfile\CUB_etl\JavaEE\BatchEmail)
+2022-06-15 11:13:05,589 [restartedMain] INFO    - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 11:13:06,622 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 11:13:06,979 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 11:13:07,034 [restartedMain] INFO    - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 11:13:07,117 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 11:13:07,308 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}

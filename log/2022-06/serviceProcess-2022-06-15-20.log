@@ -1,0 +1,64 @@
+2022-06-15 10:59:00,632 [main] DEBUG    - MetadataSourceProcessor property SEND_MAIL_OBJECT with lazy=false
+2022-06-15 10:59:00,643 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_OBJECT]
+2022-06-15 10:59:00,644 [main] DEBUG    - building SimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:59:00,645 [main] DEBUG    - Building property SEND_MAIL_OBJECT
+2022-06-15 10:59:00,646 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_subject, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,647 [main] DEBUG    - MetadataSourceProcessor property SEND_MAIL_SUBJECT with lazy=false
+2022-06-15 10:59:00,648 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_SUBJECT]
+2022-06-15 10:59:00,648 [main] DEBUG    - building SimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:59:00,649 [main] DEBUG    - Building property SEND_MAIL_SUBJECT
+2022-06-15 10:59:00,649 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,652 [main] DEBUG    - MetadataSourceProcessor property SOURCE_COUNT with lazy=false
+2022-06-15 10:59:00,653 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_COUNT]
+2022-06-15 10:59:00,654 [main] DEBUG    - building SimpleValue for SOURCE_COUNT
+2022-06-15 10:59:00,655 [main] DEBUG    - Building property SOURCE_COUNT
+2022-06-15 10:59:00,656 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_file_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,656 [main] DEBUG    - MetadataSourceProcessor property SOURCE_FILE_NAME with lazy=false
+2022-06-15 10:59:00,657 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_FILE_NAME]
+2022-06-15 10:59:00,657 [main] DEBUG    - building SimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:59:00,657 [main] DEBUG    - Building property SOURCE_FILE_NAME
+2022-06-15 10:59:00,658 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=start_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,658 [main] DEBUG    - MetadataSourceProcessor property START_TM with lazy=false
+2022-06-15 10:59:00,658 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:START_TM]
+2022-06-15 10:59:00,659 [main] DEBUG    - building SimpleValue for START_TM
+2022-06-15 10:59:00,660 [main] DEBUG    - Building property START_TM
+2022-06-15 10:59:00,660 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=target_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,661 [main] DEBUG    - MetadataSourceProcessor property TARGET_COUNT with lazy=false
+2022-06-15 10:59:00,662 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:TARGET_COUNT]
+2022-06-15 10:59:00,662 [main] DEBUG    - building SimpleValue for TARGET_COUNT
+2022-06-15 10:59:00,663 [main] DEBUG    - Building property TARGET_COUNT
+2022-06-15 10:59:00,664 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=update_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,664 [main] DEBUG    - MetadataSourceProcessor property UPDATE_TM with lazy=false
+2022-06-15 10:59:00,666 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:UPDATE_TM]
+2022-06-15 10:59:00,668 [main] DEBUG    - building SimpleValue for UPDATE_TM
+2022-06-15 10:59:00,669 [main] DEBUG    - Building property UPDATE_TM
+2022-06-15 10:59:00,691 [main] DEBUG    - Starting fillSimpleValue for BATCH_NAME
+2022-06-15 10:59:00,691 [main] DEBUG    - Starting fillSimpleValue for BATCH_CATEGORY
+2022-06-15 10:59:00,692 [main] DEBUG    - Starting fillSimpleValue for BATCH_STATUS
+2022-06-15 10:59:00,692 [main] DEBUG    - Starting fillSimpleValue for END_TM
+2022-06-15 10:59:00,693 [main] DEBUG    - Starting fillSimpleValue for MAX_DATE
+2022-06-15 10:59:00,693 [main] DEBUG    - Starting fillSimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:59:00,694 [main] DEBUG    - Starting fillSimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:59:00,694 [main] DEBUG    - Starting fillSimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:59:00,695 [main] DEBUG    - Starting fillSimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:59:00,695 [main] DEBUG    - Starting fillSimpleValue for SOURCE_COUNT
+2022-06-15 10:59:00,697 [main] DEBUG    - Starting fillSimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:59:00,698 [main] DEBUG    - Starting fillSimpleValue for START_TM
+2022-06-15 10:59:00,698 [main] DEBUG    - Starting fillSimpleValue for TARGET_COUNT
+2022-06-15 10:59:00,698 [main] DEBUG    - Starting fillSimpleValue for UPDATE_TM
+2022-06-15 10:59:00,701 [main] DEBUG    - Forcing column [batch_name] to be non-null as it is part of the primary key for table [batch_job_status]
+2022-06-15 10:59:00,808 [main] DEBUG    - Building session factory
+2022-06-15 10:59:00,810 [main] DEBUG    - SessionFactory name : null
+2022-06-15 10:59:00,811 [main] DEBUG    - Automatic flush during beforeCompletion(): enabled
+2022-06-15 10:59:00,811 [main] DEBUG    - Automatic session close at end of transaction: disabled
+2022-06-15 10:59:00,811 [main] DEBUG    - Statistics: disabled
+2022-06-15 10:59:00,812 [main] DEBUG    - Deleted entity synthetic identifier rollback: disabled
+2022-06-15 10:59:00,812 [main] DEBUG    - Default entity-mode: pojo
+2022-06-15 10:59:00,812 [main] DEBUG    - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-06-15 10:59:00,812 [main] DEBUG    - Allow initialization of lazy state outside session : disabled
+2022-06-15 10:59:00,813 [main] DEBUG    - Using BatchFetchStyle : LEGACY
+2022-06-15 10:59:00,813 [main] DEBUG    - Default batch fetch size: -1
+2022-06-15 10:59:00,814 [main] DEBUG    - Maximum outer join fetch depth: null
+2022-06-15 10:59:00,814 [main] DEBUG    - Default null ordering: NONE
+2022-06-15 10:59:00,814 [main] DEBUG    - Order SQL updates by primary key: disabled
+2022-06-15 10:59:00,815 [main] DEBUG    - Order SQL inserts for batching: disabled

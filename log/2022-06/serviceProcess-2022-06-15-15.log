@@ -1,0 +1,16 @@
+2022-06-15 10:58:59,453 [main] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@1be52861
+2022-06-15 10:58:59,458 [main] DEBUG    - Adding type registration long -> org.hibernate.type.LongType@1be52861
+2022-06-15 10:58:59,459 [main] DEBUG    - Adding type registration java.lang.Long -> org.hibernate.type.LongType@1be52861
+2022-06-15 10:58:59,461 [main] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@751d7425
+2022-06-15 10:58:59,461 [main] DEBUG    - Adding type registration float -> org.hibernate.type.FloatType@751d7425
+2022-06-15 10:58:59,462 [main] DEBUG    - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@751d7425
+2022-06-15 10:58:59,466 [main] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@204d9edf
+2022-06-15 10:58:59,467 [main] DEBUG    - Adding type registration double -> org.hibernate.type.DoubleType@204d9edf
+2022-06-15 10:58:59,467 [main] DEBUG    - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@204d9edf
+2022-06-15 10:58:59,469 [main] DEBUG    - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3404e5c4
+2022-06-15 10:58:59,470 [main] DEBUG    - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3404e5c4
+2022-06-15 10:58:59,472 [main] DEBUG    - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@73bb573d
+2022-06-15 10:58:59,472 [main] DEBUG    - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@73bb573d
+2022-06-15 10:58:59,475 [main] DEBUG    - Adding type registration string -> org.hibernate.type.StringType@cf01c2e
+2022-06-15 10:58:59,475 [main] DEBUG    - Adding type registration java.lang.String -> org.hibernate.type.StringType@cf01c2e
+2022-06-15 10:58:59,478 [main] DEBUG    - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@38811103

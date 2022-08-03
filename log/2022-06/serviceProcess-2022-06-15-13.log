@@ -1,0 +1,16 @@
+2022-06-15 10:58:58,690 [main] DEBUG    - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-06-15 10:58:58,698 [main] DEBUG    - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-06-15 10:58:58,843 [main] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 10:58:58,845 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2a40ba66
+2022-06-15 10:58:58,856 [main] DEBUG    - HHH000206: hibernate.properties not found
+2022-06-15 10:58:59,008 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@75e05ec4
+2022-06-15 10:58:59,124 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@dabe9a2
+2022-06-15 10:58:59,227 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@16afc7e1
+2022-06-15 10:58:59,271 [main] DEBUG    - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-06-15 10:58:59,304 [main] DEBUG    - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2022-06-15 10:58:59,307 [main] DEBUG    - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-06-15 10:58:59,321 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6afc92ee
+2022-06-15 10:58:59,345 [main] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 10:58:59,419 [main] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@3bbb8c16
+2022-06-15 10:58:59,419 [main] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@3bbb8c16
+2022-06-15 10:58:59,420 [main] DEBUG    - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3bbb8c16

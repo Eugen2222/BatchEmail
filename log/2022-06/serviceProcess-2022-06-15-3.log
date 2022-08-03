@@ -1,0 +1,47 @@
+2022-06-15 10:22:52,953 [restartedMain] DEBUG    - password................................<masked>
+2022-06-15 10:22:52,956 [restartedMain] DEBUG    - poolName................................"HikariPool-1"
+2022-06-15 10:22:52,956 [restartedMain] DEBUG    - readOnly................................false
+2022-06-15 10:22:52,957 [restartedMain] DEBUG    - registerMbeans................................false
+2022-06-15 10:22:52,957 [restartedMain] DEBUG    - scheduledExecutor................................none
+2022-06-15 10:22:52,957 [restartedMain] DEBUG    - schema................................none
+2022-06-15 10:22:52,958 [restartedMain] DEBUG    - threadFactory................................internal
+2022-06-15 10:22:52,958 [restartedMain] DEBUG    - transactionIsolation................................default
+2022-06-15 10:22:52,958 [restartedMain] DEBUG    - username................................"ATFEOPCORE"
+2022-06-15 10:22:52,958 [restartedMain] DEBUG    - validationTimeout................................5000
+2022-06-15 10:22:52,958 [restartedMain] INFO    - HikariPool-1 - Starting...
+2022-06-15 10:22:53,300 [restartedMain] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3ea65ce7
+2022-06-15 10:22:53,302 [restartedMain] INFO    - HikariPool-1 - Start completed.
+2022-06-15 10:22:53,343 [restartedMain] DEBUG    - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4c6ad219
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/workfile/CUB_etl/JavaEE/BatchEmail/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		batchEmail.dbTable.Batch_Job_Status]
+	Mapping files names []
+	Properties []
+2022-06-15 10:22:53,355 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-06-15 10:22:53,356 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-06-15 10:22:53,358 [restartedMain] DEBUG    - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-06-15 10:22:53,401 [restartedMain] INFO    - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-06-15 10:22:53,402 [restartedMain] DEBUG    - HHH000206: hibernate.properties not found
+2022-06-15 10:22:53,408 [HikariPool-1 housekeeper] DEBUG    - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-06-15 10:22:53,539 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@25167c97
+2022-06-15 10:22:53,556 [restartedMain] DEBUG    - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-06-15 10:22:53,567 [restartedMain] DEBUG    - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2022-06-15 10:22:53,568 [restartedMain] DEBUG    - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-06-15 10:22:53,583 [restartedMain] INFO    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 10:22:53,609 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@47f732e8
+2022-06-15 10:22:53,609 [restartedMain] DEBUG    - Adding type registration boolean -> org.hibernate.type.BooleanType@47f732e8
+2022-06-15 10:22:53,609 [restartedMain] DEBUG    - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@47f732e8
+2022-06-15 10:22:53,611 [restartedMain] DEBUG    - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@798a9b5
+2022-06-15 10:22:53,612 [restartedMain] DEBUG    - Adding type registration true_false -> org.hibernate.type.TrueFalseType@428ceb1b
+2022-06-15 10:22:53,613 [restartedMain] DEBUG    - Adding type registration yes_no -> org.hibernate.type.YesNoType@24e963e5
+2022-06-15 10:22:53,614 [restartedMain] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@1aa8bada

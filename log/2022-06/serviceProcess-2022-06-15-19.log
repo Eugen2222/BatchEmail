@@ -1,0 +1,32 @@
+2022-06-15 10:59:00,600 [main] DEBUG    - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(batch_name)]), BATCH_NAME, assigned, , ...)
+2022-06-15 10:59:00,609 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_category, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,610 [main] DEBUG    - MetadataSourceProcessor property BATCH_CATEGORY with lazy=false
+2022-06-15 10:59:00,611 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_CATEGORY]
+2022-06-15 10:59:00,611 [main] DEBUG    - building SimpleValue for BATCH_CATEGORY
+2022-06-15 10:59:00,612 [main] DEBUG    - Building property BATCH_CATEGORY
+2022-06-15 10:59:00,613 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_status, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,613 [main] DEBUG    - MetadataSourceProcessor property BATCH_STATUS with lazy=false
+2022-06-15 10:59:00,614 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_STATUS]
+2022-06-15 10:59:00,614 [main] DEBUG    - building SimpleValue for BATCH_STATUS
+2022-06-15 10:59:00,615 [main] DEBUG    - Building property BATCH_STATUS
+2022-06-15 10:59:00,615 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=end_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,616 [main] DEBUG    - MetadataSourceProcessor property END_TM with lazy=false
+2022-06-15 10:59:00,617 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:END_TM]
+2022-06-15 10:59:00,619 [main] DEBUG    - building SimpleValue for END_TM
+2022-06-15 10:59:00,619 [main] DEBUG    - Building property END_TM
+2022-06-15 10:59:00,621 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=max_date, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,622 [main] DEBUG    - MetadataSourceProcessor property MAX_DATE with lazy=false
+2022-06-15 10:59:00,623 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:MAX_DATE]
+2022-06-15 10:59:00,623 [main] DEBUG    - building SimpleValue for MAX_DATE
+2022-06-15 10:59:00,624 [main] DEBUG    - Building property MAX_DATE
+2022-06-15 10:59:00,624 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_content, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,625 [main] DEBUG    - MetadataSourceProcessor property SEND_MAIL_CONTENT with lazy=false
+2022-06-15 10:59:00,625 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_CONTENT]
+2022-06-15 10:59:00,626 [main] DEBUG    - building SimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:59:00,627 [main] DEBUG    - Building property SEND_MAIL_CONTENT
+2022-06-15 10:59:00,628 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_flag, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,629 [main] DEBUG    - MetadataSourceProcessor property SEND_MAIL_FLAG with lazy=false
+2022-06-15 10:59:00,630 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_FLAG]
+2022-06-15 10:59:00,631 [main] DEBUG    - building SimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:59:00,631 [main] DEBUG    - Building property SEND_MAIL_FLAG
+2022-06-15 10:59:00,632 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_object, insertable=true, updatable=true, unique=false}

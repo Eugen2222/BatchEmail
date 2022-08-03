@@ -1,0 +1,137 @@
+2022-06-15 10:22:53,664 [restartedMain] DEBUG    - Adding type registration timezone -> org.hibernate.type.TimeZoneType@7ec3f151
+2022-06-15 10:22:53,667 [restartedMain] DEBUG    - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7ec3f151
+2022-06-15 10:22:53,668 [restartedMain] DEBUG    - Adding type registration class -> org.hibernate.type.ClassType@1b3a5f3c
+2022-06-15 10:22:53,668 [restartedMain] DEBUG    - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1b3a5f3c
+2022-06-15 10:22:53,669 [restartedMain] DEBUG    - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@44d6ca8e
+2022-06-15 10:22:53,669 [restartedMain] DEBUG    - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@44d6ca8e
+2022-06-15 10:22:53,669 [restartedMain] DEBUG    - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5807cbe3
+2022-06-15 10:22:53,670 [restartedMain] DEBUG    - Adding type registration binary -> org.hibernate.type.BinaryType@4a0c0f6a
+2022-06-15 10:22:53,670 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.BinaryType@4a0c0f6a
+2022-06-15 10:22:53,670 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.BinaryType@4a0c0f6a
+2022-06-15 10:22:53,671 [restartedMain] DEBUG    - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@588c8c1a
+2022-06-15 10:22:53,671 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@588c8c1a
+2022-06-15 10:22:53,671 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@588c8c1a
+2022-06-15 10:22:53,672 [restartedMain] DEBUG    - Adding type registration row_version -> org.hibernate.type.RowVersionType@39a6249b
+2022-06-15 10:22:53,672 [restartedMain] DEBUG    - Adding type registration image -> org.hibernate.type.ImageType@34a9fd05
+2022-06-15 10:22:53,673 [restartedMain] DEBUG    - Adding type registration characters -> org.hibernate.type.CharArrayType@4f12b5e9
+2022-06-15 10:22:53,673 [restartedMain] DEBUG    - Adding type registration char[] -> org.hibernate.type.CharArrayType@4f12b5e9
+2022-06-15 10:22:53,673 [restartedMain] DEBUG    - Adding type registration [C -> org.hibernate.type.CharArrayType@4f12b5e9
+2022-06-15 10:22:53,674 [restartedMain] DEBUG    - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1000f41a
+2022-06-15 10:22:53,674 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1000f41a
+2022-06-15 10:22:53,674 [restartedMain] DEBUG    - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1000f41a
+2022-06-15 10:22:53,674 [restartedMain] DEBUG    - Adding type registration text -> org.hibernate.type.TextType@36f3bc4a
+2022-06-15 10:22:53,674 [restartedMain] DEBUG    - Adding type registration ntext -> org.hibernate.type.NTextType@59b1f207
+2022-06-15 10:22:53,675 [restartedMain] DEBUG    - Adding type registration blob -> org.hibernate.type.BlobType@4adfd797
+2022-06-15 10:22:53,676 [restartedMain] DEBUG    - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4adfd797
+2022-06-15 10:22:53,676 [restartedMain] DEBUG    - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@29581c97
+2022-06-15 10:22:53,678 [restartedMain] DEBUG    - Adding type registration clob -> org.hibernate.type.ClobType@e815412
+2022-06-15 10:22:53,678 [restartedMain] DEBUG    - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@e815412
+2022-06-15 10:22:53,679 [restartedMain] DEBUG    - Adding type registration nclob -> org.hibernate.type.NClobType@445c03bb
+2022-06-15 10:22:53,680 [restartedMain] DEBUG    - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@445c03bb
+2022-06-15 10:22:53,680 [restartedMain] DEBUG    - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1cedbe0e
+2022-06-15 10:22:53,680 [restartedMain] DEBUG    - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@696192ba
+2022-06-15 10:22:53,681 [restartedMain] DEBUG    - Adding type registration serializable -> org.hibernate.type.SerializableType@346cd6eb
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration object -> org.hibernate.type.ObjectType@3d822368
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3d822368
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4a57a76d
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@13c1ebb6
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@52326f9f
+2022-06-15 10:22:53,684 [restartedMain] DEBUG    - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@26a90b62
+2022-06-15 10:22:53,685 [restartedMain] DEBUG    - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5132ac15
+2022-06-15 10:22:53,685 [restartedMain] DEBUG    - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4db271de
+2022-06-15 10:22:53,685 [restartedMain] DEBUG    - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@cbdb160
+2022-06-15 10:22:53,685 [restartedMain] DEBUG    - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6221498e
+2022-06-15 10:22:53,697 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3c8fdac5] into BootstrapContext; was [null]
+2022-06-15 10:22:53,697 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3c8fdac5) [was null]
+2022-06-15 10:22:53,698 [restartedMain] DEBUG    - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5390a9ac] into BootstrapContext; was [null]
+2022-06-15 10:22:53,698 [restartedMain] DEBUG    - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@9b87efd] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@75febea5]
+2022-06-15 10:22:53,711 [restartedMain] DEBUG    - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3c8fdac5]
+2022-06-15 10:22:53,711 [restartedMain] DEBUG    - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3c8fdac5]
+2022-06-15 10:22:53,719 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-06-15 10:22:53,719 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-06-15 10:22:53,720 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:22:53,720 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-06-15 10:22:53,720 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-06-15 10:22:53,721 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-06-15 10:22:53,721 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-06-15 10:22:53,722 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:22:53,723 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-06-15 10:22:53,724 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-06-15 10:22:53,724 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-06-15 10:22:53,725 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-06-15 10:22:53,725 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-06-15 10:22:53,726 [restartedMain] DEBUG    - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-06-15 10:22:53,732 [restartedMain] DEBUG    - Database ->
+       name : Oracle
+    version : Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+      major : 19
+      minor : 0
+2022-06-15 10:22:53,733 [restartedMain] DEBUG    - Driver ->
+       name : Oracle JDBC driver
+    version : 21.3.0.0.0
+      major : 21
+      minor : 3
+2022-06-15 10:22:53,733 [restartedMain] DEBUG    - JDBC version : 4.2
+2022-06-15 10:22:53,743 [restartedMain] INFO    - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-06-15 10:22:53,749 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3b25163d
+2022-06-15 10:22:53,868 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@20213f30
+2022-06-15 10:22:53,906 [restartedMain] DEBUG    - Adding type registration byte[] -> org.hibernate.type.MaterializedBlobType@29581c97
+2022-06-15 10:22:53,906 [restartedMain] DEBUG    - HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@4a0c0f6a
+2022-06-15 10:22:53,906 [restartedMain] DEBUG    - Adding type registration [B -> org.hibernate.type.MaterializedBlobType@29581c97
+2022-06-15 10:22:53,906 [restartedMain] DEBUG    - HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@4a0c0f6a
+2022-06-15 10:22:53,907 [restartedMain] DEBUG    - Adding type registration Byte[] -> org.hibernate.type.WrappedMaterializedBlobType@34122226
+2022-06-15 10:22:53,907 [restartedMain] DEBUG    - HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@588c8c1a
+2022-06-15 10:22:53,907 [restartedMain] DEBUG    - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrappedMaterializedBlobType@34122226
+2022-06-15 10:22:53,907 [restartedMain] DEBUG    - HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@588c8c1a
+2022-06-15 10:22:53,909 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@75dde813] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3e9f2506]
+2022-06-15 10:22:53,938 [restartedMain] DEBUG    - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-06-15 10:22:53,950 [restartedMain] DEBUG    - Binding entity from annotated class: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:53,967 [restartedMain] DEBUG    - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-06-15 10:22:53,971 [restartedMain] DEBUG    - Import with entity name Batch_Job_Status
+2022-06-15 10:22:53,974 [restartedMain] DEBUG    - Bind entity batchEmail.dbTable.Batch_Job_Status on table batch_job_status
+2022-06-15 10:22:53,978 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@34e5a419
+2022-06-15 10:22:53,987 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:53,990 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 10:22:53,990 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:53,991 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_NAME with lazy=false
+2022-06-15 10:22:53,992 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_NAME]
+2022-06-15 10:22:53,995 [restartedMain] DEBUG    - building SimpleValue for BATCH_NAME
+2022-06-15 10:22:53,996 [restartedMain] DEBUG    - Building property BATCH_NAME
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(batch_name)]), BATCH_NAME, assigned, , ...)
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_category, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_CATEGORY with lazy=false
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_CATEGORY]
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - building SimpleValue for BATCH_CATEGORY
+2022-06-15 10:22:53,998 [restartedMain] DEBUG    - Building property BATCH_CATEGORY
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_status, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - MetadataSourceProcessor property BATCH_STATUS with lazy=false
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_STATUS]
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - building SimpleValue for BATCH_STATUS
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - Building property BATCH_STATUS
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=end_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - MetadataSourceProcessor property END_TM with lazy=false
+2022-06-15 10:22:53,999 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:END_TM]
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - building SimpleValue for END_TM
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - Building property END_TM
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=max_date, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - MetadataSourceProcessor property MAX_DATE with lazy=false
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:MAX_DATE]
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - building SimpleValue for MAX_DATE
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - Building property MAX_DATE
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_content, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,000 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_CONTENT with lazy=false
+2022-06-15 10:22:54,001 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_CONTENT]
+2022-06-15 10:22:54,001 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:22:54,001 [restartedMain] DEBUG    - Building property SEND_MAIL_CONTENT
+2022-06-15 10:22:54,001 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_flag, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,001 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_FLAG with lazy=false
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_FLAG]
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - Building property SEND_MAIL_FLAG
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_object, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_OBJECT with lazy=false
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_OBJECT]
+2022-06-15 10:22:54,002 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:22:54,003 [restartedMain] DEBUG    - Building property SEND_MAIL_OBJECT
+2022-06-15 10:22:54,003 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=send_mail_subject, insertable=true, updatable=true, unique=false}

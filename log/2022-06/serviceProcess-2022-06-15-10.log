@@ -1,0 +1,12 @@
+2022-06-15 10:58:57,393 [main] DEBUG    - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6d21714c
+2022-06-15 10:58:57,825 [main] DEBUG    - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-06-15 10:58:57,864 [main] DEBUG    - HikariPool-1 - configuration:
+2022-06-15 10:58:57,867 [main] DEBUG    - allowPoolSuspension................................false
+2022-06-15 10:58:57,868 [main] DEBUG    - autoCommit................................true
+2022-06-15 10:58:57,869 [main] DEBUG    - catalog................................none
+2022-06-15 10:58:57,870 [main] DEBUG    - connectionInitSql................................none
+2022-06-15 10:58:57,870 [main] DEBUG    - connectionTestQuery................................none
+2022-06-15 10:58:57,871 [main] DEBUG    - connectionTimeout................................30000
+2022-06-15 10:58:57,872 [main] DEBUG    - dataSource................................none
+2022-06-15 10:58:57,872 [main] DEBUG    - dataSourceClassName................................none
+2022-06-15 10:58:57,873 [main] DEBUG    - dataSourceJNDI................................none

@@ -1,0 +1,11 @@
+2022-06-15 10:59:00,376 [main] DEBUG    - Binding entity from annotated class: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:59:00,445 [main] DEBUG    - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-06-15 10:59:00,477 [main] DEBUG    - Import with entity name Batch_Job_Status
+2022-06-15 10:59:00,487 [main] DEBUG    - Bind entity batchEmail.dbTable.Batch_Job_Status on table batch_job_status
+2022-06-15 10:59:00,550 [main] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=batch_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:59:00,565 [main] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 10:59:00,566 [main] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:59:00,570 [main] DEBUG    - MetadataSourceProcessor property BATCH_NAME with lazy=false
+2022-06-15 10:59:00,575 [main] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:BATCH_NAME]
+2022-06-15 10:59:00,583 [main] DEBUG    - building SimpleValue for BATCH_NAME
+2022-06-15 10:59:00,593 [main] DEBUG    - Building property BATCH_NAME

@@ -1,0 +1,18 @@
+2022-06-15 11:21:34,660 [restartedMain] ERROR    - Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+java.lang.NullPointerException: Cannot invoke "String.replace(java.lang.CharSequence, java.lang.CharSequence)" because the return value of "batchEmail.dbTable.Batch_Job_Status.getSEND_MAIL_OBJECT()" is null
+	at batchEmail.BatchEmailApplication.sendSimpleMail(BatchEmailApplication.java:109)
+	at batchEmail.BatchEmailApplication.run(BatchEmailApplication.java:64)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at batchEmail.BatchEmailApplication.main(BatchEmailApplication.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-06-15 11:21:34,664 [restartedMain] INFO    - Try to send email for db table:"AF_BRANCH_UTF8".
+2022-06-15 11:21:34,739 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 11:21:34,749 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?

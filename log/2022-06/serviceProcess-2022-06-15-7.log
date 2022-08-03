@@ -1,0 +1,137 @@
+2022-06-15 10:22:54,003 [restartedMain] DEBUG    - MetadataSourceProcessor property SEND_MAIL_SUBJECT with lazy=false
+2022-06-15 10:22:54,006 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SEND_MAIL_SUBJECT]
+2022-06-15 10:22:54,007 [restartedMain] DEBUG    - building SimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:22:54,007 [restartedMain] DEBUG    - Building property SEND_MAIL_SUBJECT
+2022-06-15 10:22:54,007 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,008 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_COUNT with lazy=false
+2022-06-15 10:22:54,008 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_COUNT]
+2022-06-15 10:22:54,008 [restartedMain] DEBUG    - building SimpleValue for SOURCE_COUNT
+2022-06-15 10:22:54,008 [restartedMain] DEBUG    - Building property SOURCE_COUNT
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=source_file_name, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - MetadataSourceProcessor property SOURCE_FILE_NAME with lazy=false
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:SOURCE_FILE_NAME]
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - building SimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - Building property SOURCE_FILE_NAME
+2022-06-15 10:22:54,009 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=start_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,010 [restartedMain] DEBUG    - MetadataSourceProcessor property START_TM with lazy=false
+2022-06-15 10:22:54,010 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:START_TM]
+2022-06-15 10:22:54,010 [restartedMain] DEBUG    - building SimpleValue for START_TM
+2022-06-15 10:22:54,010 [restartedMain] DEBUG    - Building property START_TM
+2022-06-15 10:22:54,010 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=target_count, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,011 [restartedMain] DEBUG    - MetadataSourceProcessor property TARGET_COUNT with lazy=false
+2022-06-15 10:22:54,011 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:TARGET_COUNT]
+2022-06-15 10:22:54,011 [restartedMain] DEBUG    - building SimpleValue for TARGET_COUNT
+2022-06-15 10:22:54,011 [restartedMain] DEBUG    - Building property TARGET_COUNT
+2022-06-15 10:22:54,011 [restartedMain] DEBUG    - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(batch_job_status), mappingColumn=update_tm, insertable=true, updatable=true, unique=false}
+2022-06-15 10:22:54,012 [restartedMain] DEBUG    - MetadataSourceProcessor property UPDATE_TM with lazy=false
+2022-06-15 10:22:54,012 [restartedMain] DEBUG    - Attempting to locate auto-apply AttributeConverter for property [batchEmail.dbTable.Batch_Job_Status:UPDATE_TM]
+2022-06-15 10:22:54,012 [restartedMain] DEBUG    - building SimpleValue for UPDATE_TM
+2022-06-15 10:22:54,012 [restartedMain] DEBUG    - Building property UPDATE_TM
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_NAME
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_CATEGORY
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for BATCH_STATUS
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for END_TM
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for MAX_DATE
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_CONTENT
+2022-06-15 10:22:54,020 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_FLAG
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_OBJECT
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for SEND_MAIL_SUBJECT
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_COUNT
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for SOURCE_FILE_NAME
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for START_TM
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for TARGET_COUNT
+2022-06-15 10:22:54,021 [restartedMain] DEBUG    - Starting fillSimpleValue for UPDATE_TM
+2022-06-15 10:22:54,022 [restartedMain] DEBUG    - Forcing column [batch_name] to be non-null as it is part of the primary key for table [batch_job_status]
+2022-06-15 10:22:54,052 [restartedMain] DEBUG    - Building session factory
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - SessionFactory name : null
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Automatic flush during beforeCompletion(): enabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Automatic session close at end of transaction: disabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Statistics: disabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Deleted entity synthetic identifier rollback: disabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Default entity-mode: pojo
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Allow initialization of lazy state outside session : disabled
+2022-06-15 10:22:54,053 [restartedMain] DEBUG    - Using BatchFetchStyle : LEGACY
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Default batch fetch size: -1
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Maximum outer join fetch depth: null
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Default null ordering: NONE
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Order SQL updates by primary key: disabled
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Order SQL inserts for batching: disabled
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - multi-tenancy strategy : NONE
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - JTA Track by Thread: enabled
+2022-06-15 10:22:54,054 [restartedMain] DEBUG    - Query language substitutions: {}
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Named query checking : enabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Second-level cache: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Second-level query cache: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Second-level query cache factory: null
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Second-level cache region prefix: null
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Optimize second-level cache for minimal puts: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Structured second-level cache entries: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Second-level cache direct-reference entries: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - Automatic eviction of collection cache: disabled
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - JDBC batch size: 15
+2022-06-15 10:22:54,055 [restartedMain] DEBUG    - JDBC batch updates for versioned data: enabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - Scrollable result sets: enabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - Wrap result sets: disabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JDBC3 getGeneratedKeys(): enabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JDBC result set fetch size: null
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - Connection release mode: ON_CLOSE
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - Generate SQL with comments: disabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JPA compliance - query : disabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JPA compliance - closed-handling : disabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JPA compliance - lists : disabled
+2022-06-15 10:22:54,056 [restartedMain] DEBUG    - JPA compliance - transactions : disabled
+2022-06-15 10:22:54,085 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@526420cd
+2022-06-15 10:22:54,099 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:54,100 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:54,109 [restartedMain] DEBUG    - Session factory constructed with filter configurations : {}
+2022-06-15 10:22:54,110 [restartedMain] DEBUG    - Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=17, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@29923ca0, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=MS950, hibernate.dialect=org.hibernate.dialect.Oracle12cDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\workfile\CUB_etl\JavaEE\BatchEmail\target\classes;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.6.4\spring-boot-starter-data-jpa-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.6.4\spring-boot-starter-aop-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aop\5.3.16\spring-aop-5.3.16.jar;C:\Users\user01\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.6.4\spring-boot-starter-jdbc-2.6.4.jar;C:\Users\user01\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jdbc\5.3.16\spring-jdbc-5.3.16.jar;C:\Users\user01\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\user01\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\user01\.m2\repository\org\hibernate\hibernate-core\5.6.5.Final\hibernate-core-5.6.5.Final.jar;C:\Users\user01\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\user01\.m2\repository\net\bytebuddy\byte-buddy\1.11.22\byte-buddy-1.11.22.jar;C:\Users\user01\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\user01\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\user01\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\user01\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.6\jaxb-runtime-2.3.6.jar;C:\Users\user01\.m2\repository\org\glassfish\jaxb\txw2\2.3.6\txw2-2.3.6.jar;C:\Users\user01\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-jpa\2.6.2\spring-data-jpa-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\data\spring-data-commons\2.6.2\spring-data-commons-2.6.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-orm\5.3.16\spring-orm-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context\5.3.16\spring-context-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-expression\5.3.16\spring-expression-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-tx\5.3.16\spring-tx-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-beans\5.3.16\spring-beans-5.3.16.jar;C:\Users\user01\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user01\.m2\repository\org\springframework\spring-aspects\5.3.16\spring-aspects-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-mail\2.6.4\spring-boot-starter-mail-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter\2.6.4\spring-boot-starter-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.6.4\spring-boot-starter-logging-2.6.4.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-classic\1.2.10\logback-classic-1.2.10.jar;C:\Users\user01\.m2\repository\ch\qos\logback\logback-core\1.2.10\logback-core-1.2.10.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.1\log4j-to-slf4j-2.17.1.jar;C:\Users\user01\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\user01\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\user01\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\user01\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\user01\.m2\repository\org\springframework\spring-context-support\5.3.16\spring-context-support-5.3.16.jar;C:\Users\user01\.m2\repository\com\sun\mail\jakarta.mail\1.6.7\jakarta.mail-1.6.7.jar;C:\Users\user01\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-devtools\2.6.4\spring-boot-devtools-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot\2.6.4\spring-boot-2.6.4.jar;C:\Users\user01\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.4\spring-boot-autoconfigure-2.6.4.jar;C:\Users\user01\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar;C:\Users\user01\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\user01\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\user01\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\user01\.m2\repository\org\springframework\spring-core\5.3.16\spring-core-5.3.16.jar;C:\Users\user01\.m2\repository\org\springframework\spring-jcl\5.3.16\spring-jcl-5.3.16.jar, com.sun.management.jmxremote.authenticate=false, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=Asia/Taipei, jakarta.persistence.sharedCache.mode=UNSPECIFIED, java.vm.specification.version=17, os.name=Windows 10, javax.persistence.validation.mode=AUTO, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), sun.java.launcher=SUN_STANDARD, user.country=TW, sun.boot.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=batchEmail.BatchEmailApplication test, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@69b88373, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, spring.boot.project.name=BatchEmail, user.home=C:\Users\user01, user.language=zh, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.2+8, user.name=user01, spring.jmx.enabled=true, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Temurin-17.0.2+8, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\user01\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, com.sun.management.jmxremote.port=49686, java.version=17.0.2, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\workfile\CUB_etl\JavaEE\BatchEmail, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=23196, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@28d5b551, native.encoding=MS950, java.library.path=C:\Users\user01\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/user01/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Java\jre1.8.0_202\bin;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Program Files\SASHome\Secure\ccme4;C:\Users\user01\AppData\Local\Microsoft\WindowsApps;C:\Users\user01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user01\AppData\Roaming\npm;C:\ProgramData\user01\GitHubDesktop\bin;C:\Users\user01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Azure Data Studio\bin;C:\WINDOWS\system32;;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, emulated-client, java.vm.version=17.0.2+8, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, java.rmi.server.hostname=localhost, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), CONSOLE_LOG_PATTERN=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n, java.class.version=61.0}
+2022-06-15 10:22:54,121 [restartedMain] DEBUG    - Skipping JACC integration as it was not enabled
+2022-06-15 10:22:54,123 [restartedMain] DEBUG    - Instantiated session factory
+2022-06-15 10:22:54,123 [restartedMain] DEBUG    - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@75dde813] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@675f16d5]
+2022-06-15 10:22:54,171 [restartedMain] DEBUG    - Not known whether passed class name [batchEmail.dbTable.Batch_Job_Status] is safe
+2022-06-15 10:22:54,171 [restartedMain] DEBUG    - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:54,205 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@70be81f8
+2022-06-15 10:22:54,331 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@22643447
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    - Static SQL for entity: batchEmail.dbTable.Batch_Job_Status
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    -  Version select: select batch_name from batch_job_status where batch_name =?
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    -  Snapshot select: select batch_job__.batch_name, batch_job__.batch_category as batch_category2_0_, batch_job__.batch_status as batch_status3_0_, batch_job__.end_tm as end_tm4_0_, batch_job__.max_date as max_date5_0_, batch_job__.send_mail_content as send_mail_content6_0_, batch_job__.send_mail_flag as send_mail_flag7_0_, batch_job__.send_mail_object as send_mail_object8_0_, batch_job__.send_mail_subject as send_mail_subject9_0_, batch_job__.source_count as source_count10_0_, batch_job__.source_file_name as source_file_name11_0_, batch_job__.start_tm as start_tm12_0_, batch_job__.target_count as target_count13_0_, batch_job__.update_tm as update_tm14_0_ from batch_job_status batch_job__ where batch_job__.batch_name=?
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    -  Insert 0: insert into batch_job_status (batch_category, batch_status, end_tm, max_date, send_mail_content, send_mail_flag, send_mail_object, send_mail_subject, source_count, source_file_name, start_tm, target_count, update_tm, batch_name) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    -  Update 0: update batch_job_status set batch_category=?, batch_status=?, end_tm=?, max_date=?, send_mail_content=?, send_mail_flag=?, send_mail_object=?, send_mail_subject=?, source_count=?, source_file_name=?, start_tm=?, target_count=?, update_tm=? where batch_name=?
+2022-06-15 10:22:54,370 [restartedMain] DEBUG    -  Delete 0: delete from batch_job_status where batch_name=?
+2022-06-15 10:22:54,397 [restartedMain] DEBUG    - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bd00d63]
+2022-06-15 10:22:54,398 [restartedMain] DEBUG    - Visiting attribute path : BATCH_CATEGORY
+2022-06-15 10:22:54,398 [restartedMain] DEBUG    - Visiting attribute path : BATCH_STATUS
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : END_TM
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : MAX_DATE
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_CONTENT
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_FLAG
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_OBJECT
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SEND_MAIL_SUBJECT
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_COUNT
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : SOURCE_FILE_NAME
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : START_TM
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : TARGET_COUNT
+2022-06-15 10:22:54,399 [restartedMain] DEBUG    - Visiting attribute path : UPDATE_TM
+2022-06-15 10:22:54,400 [restartedMain] DEBUG    - Building LoadPlan...
+2022-06-15 10:22:54,408 [restartedMain] DEBUG    - processing queryspace <gen:0>
+2022-06-15 10:22:54,414 [restartedMain] DEBUG    - LoadPlan(entity=batchEmail.dbTable.Batch_Job_Status)
+    - Returns
+       - EntityReturnImpl(entity=batchEmail.dbTable.Batch_Job_Status, querySpaceUid=<gen:0>, path=batchEmail.dbTable.Batch_Job_Status)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=batchEmail.dbTable.Batch_Job_Status)
+          - SQL table alias mapping - batch_job_0_
+          - alias suffix - 0_
+          - suffixed key columns - {batch_name1_0_0_}
+
+2022-06-15 10:22:54,416 [restartedMain] DEBUG    - Static select for entity batchEmail.dbTable.Batch_Job_Status [NONE]: select batch_job_0_.batch_name as batch_name1_0_0_, batch_job_0_.batch_category as batch_category2_0_0_, batch_job_0_.batch_status as batch_status3_0_0_, batch_job_0_.end_tm as end_tm4_0_0_, batch_job_0_.max_date as max_date5_0_0_, batch_job_0_.send_mail_content as send_mail_content6_0_0_, batch_job_0_.send_mail_flag as send_mail_flag7_0_0_, batch_job_0_.send_mail_object as send_mail_object8_0_0_, batch_job_0_.send_mail_subject as send_mail_subject9_0_0_, batch_job_0_.source_count as source_count10_0_0_, batch_job_0_.source_file_name as source_file_name11_0_0_, batch_job_0_.start_tm as start_tm12_0_0_, batch_job_0_.target_count as target_count13_0_0_, batch_job_0_.update_tm as update_tm14_0_0_ from batch_job_status batch_job_0_ where batch_job_0_.batch_name=?
+2022-06-15 10:22:54,436 [restartedMain] DEBUG    - No actions specified; doing nothing
+2022-06-15 10:22:54,437 [restartedMain] INFO    - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 10:22:54,437 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@58a40b9e
+2022-06-15 10:22:54,437 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-06-15 10:22:54,437 [restartedMain] DEBUG    - Checking 0 named HQL queries
+2022-06-15 10:22:54,437 [restartedMain] DEBUG    - Checking 0 named SQL queries
+2022-06-15 10:22:54,441 [restartedMain] DEBUG    - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-06-15 10:22:54,448 [restartedMain] DEBUG    - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@57c62dbc
+2022-06-15 10:22:54,449 [restartedMain] DEBUG    - Registering SessionFactory: 1efd303c-d466-4f36-a1dd-6a49a3655f06 (<unnamed>)

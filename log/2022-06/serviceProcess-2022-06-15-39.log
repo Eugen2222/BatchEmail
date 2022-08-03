@@ -1,0 +1,16 @@
+2022-06-15 11:21:39,699 [restartedMain] INFO    - Completed.
+2022-06-15 11:21:39,702 [restartedMain] INFO    - Try to send email for db table:"DEL_VI_APPLY_RELA".
+2022-06-15 11:21:39,745 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 11:21:39,751 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 11:21:39,762 [restartedMain] INFO    - Completed.
+2022-06-15 11:21:39,762 [restartedMain] INFO    - Try to send email for db table:"DEL_VI_APPLY".
+2022-06-15 11:21:39,798 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 11:21:39,805 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 11:21:39,812 [restartedMain] INFO    - Completed.
+2022-06-15 11:21:39,813 [restartedMain] INFO    - Try to send email for db table:"AF_RULE_LIST".
+2022-06-15 11:21:39,864 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 11:21:39,872 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?
+2022-06-15 11:21:39,883 [restartedMain] INFO    - Completed.
+2022-06-15 11:21:39,883 [restartedMain] INFO    - Try to send email for db table:"FTP_BRANCH".
+2022-06-15 11:21:39,920 [restartedMain] DEBUG    - update batch_job_status set send_mail_flag=? where batch_name=?
+2022-06-15 11:21:39,928 [restartedMain] DEBUG    - update batch_job_status set update_tm=CURRENT_TIMESTAMP where batch_name=?

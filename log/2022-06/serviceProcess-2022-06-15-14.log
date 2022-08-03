@@ -1,0 +1,16 @@
+2022-06-15 10:58:59,424 [HikariPool-1 connection adder] DEBUG    - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7894bb72
+2022-06-15 10:58:59,421 [main] DEBUG    - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@25ce435
+2022-06-15 10:58:59,428 [main] DEBUG    - Adding type registration true_false -> org.hibernate.type.TrueFalseType@5f5297e3
+2022-06-15 10:58:59,430 [main] DEBUG    - Adding type registration yes_no -> org.hibernate.type.YesNoType@42cf6349
+2022-06-15 10:58:59,434 [main] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@71166348
+2022-06-15 10:58:59,437 [main] DEBUG    - Adding type registration byte -> org.hibernate.type.ByteType@71166348
+2022-06-15 10:58:59,438 [main] DEBUG    - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@71166348
+2022-06-15 10:58:59,441 [main] DEBUG    - Adding type registration character -> org.hibernate.type.CharacterType@76e4212
+2022-06-15 10:58:59,442 [main] DEBUG    - Adding type registration char -> org.hibernate.type.CharacterType@76e4212
+2022-06-15 10:58:59,443 [main] DEBUG    - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@76e4212
+2022-06-15 10:58:59,445 [main] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@45bbc52f
+2022-06-15 10:58:59,446 [main] DEBUG    - Adding type registration short -> org.hibernate.type.ShortType@45bbc52f
+2022-06-15 10:58:59,447 [main] DEBUG    - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@45bbc52f
+2022-06-15 10:58:59,449 [main] DEBUG    - Adding type registration integer -> org.hibernate.type.IntegerType@150fc7a7
+2022-06-15 10:58:59,450 [main] DEBUG    - Adding type registration int -> org.hibernate.type.IntegerType@150fc7a7
+2022-06-15 10:58:59,450 [main] DEBUG    - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@150fc7a7
